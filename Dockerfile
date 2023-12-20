@@ -1,5 +1,5 @@
 # Use an official Node.js image as a base image
-FROM quay.io/astropeda/gnime-md
+FROM quay.io/maherzubair/gnime-md:beta
 
 # Set the working directory inside the container
 WORKDIR /root/Astropeda
