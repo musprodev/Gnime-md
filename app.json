@@ -1,8 +1,8 @@
 {
   "name": "Gnime-Md WHATSAPP BOT BY Astropeda",
-  "description": "A Whatsapp Bot With Most Premium Features Makes Your Whatsapp Premium. For Any Help See My YT:https://www.youtube.com/@InnoxentTech",
-  "logo": "https://telegra.ph/file/e5768d0b5a4441b4e576b.jpg",
-  "keywords": ["nodejs", "bot", "whatsapp bot", "SIGMA_MD", "SIGMA_BOT", "SIGMA","SIGMA_MD-BOT","Multi-Themes Bot","multi device"],
+  "description": "A Whatsapp Bot With Most Premium Features Makes Your Whatsapp Premium.",
+  "logo": "https://leadier-umbrellas.000webhostapp.com/Gnime-logos.jpeg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "GNIME_MD", "GNIME_BOT", "GNIME","GNIME_MD-BOT","Multi-Themes Bot","multi device"],
   "success_url": "/",
   "stack": "container",
 "env": {
@@ -12,7 +12,7 @@
   },
    "THUMB_IMAGE": {
     "description": "THUMBNAIL Image for bot.",
-     "value": "https://telegra.ph/file/03e49e6e2057568db8926.jpg"
+     "value": "https://leadier-umbrellas.000webhostapp.com/Gnime-logos.jpeg"
     },
  "HEROKU_API_KEY": {
     "description": "Put Your Heroku Api Key Here",
@@ -64,10 +64,11 @@
   },
   "OWNER_NUMBER": {
     "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
-       "value": "923466319114"
+       "value": "2349027862116",
+       "required" :true
   },
    "SESSION_ID": {
-    "description": "Please put your SESSION_ID here,if you don't have visit to get Session id\nhttps://replit.com/@Mehar-Zubair/Gnime-Md?v=1"
+    "description": "Please put your SESSION_ID here,if you don't have visit to get Session id\nhttps://replit.com/@astromedia0010/GNIME-MD-QR?v=1"
   },
     "OPENAI_API_KEY": {
     "description": "Please put your OPENAI api key here.Get it from beta.openai.com ",
@@ -76,12 +77,12 @@
   },
   "WELCOME_MESSAGE": {
     "description": "Enter the message here which you want to see when a new user joins a Group.",
-       "value": " @pp _HI Dear @user_\n_Welcome In ♥️ @gname_\n_Read The Description CareFully_\n\n\n_Support Me By Subscribing_\n_https://www.youtube.com/@InnoxentTech_",
+       "value": " @pp _HI Dear @user_\n_Welcome In ♥️ @gname_\n_Read The Description CareFully_",
        "required" :false
   },
   "MONGODB_URI": {
     "description": "Add Your Own, If you have key. Its a secret String for Mongodb Connection",
-     "value": "mongodb+srv://Astropeda:Gnime-Md@zubi.9g6b16y.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp"
+     "value": "mongodb+srv://danielpeter:beka10beka10@cluster0.ef032ix.mongodb.net/?retryWrites=true&w=majority"
   },
     "WORKTYPE": {
   "description": "Worktype of your bot. Use public or private, if it is private then only bot number can use it. If public then everyone can use it.",
@@ -119,7 +120,7 @@
 },
 "WAURL": {
   "description": "Add Your Group Link.You Can See IT IN Most Commands",
-   "value": "https://chat.whatsapp.com/JM1yBMlveulDrAN22jHcWV",
+   "value": "https://chat.whatsapp.com/L1XNePCPC8O6rw9JeQ0iLB",
     "required": false
 },
 "BOT_NAME": {

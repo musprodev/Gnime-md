@@ -2,7 +2,7 @@
 <h1 align="center"> ɢɴɪᴍᴇ ᴍᴅ </h1>
 </p>
 <p align="center">
-  <a href="https://www.youtube.com/@InnoxentTech">
+  <a href="https://github.com/Astropeda">
     <img alt=Support height="350" src="https://leadier-umbrellas.000webhostapp.com/Gnime-logos.jpeg"> 
     </p>
     <p align="center">
@@ -55,8 +55,9 @@
 3. **Get SESSION ID  by [`Scanning QR Code`](https://replit.com/@astromedia0010/GNIME-MD-QR?v=1). `Whatapp>Three dots>Linked Devices`**
 4. **Get a Mongodb url From [`Mongodb,`](https://account.mongodb.com/).**
 5. **Deploy on [`Heroku,`](https://heroku.com/deploy?template=https://github.com/Astropeda/Gnime-md)**
-6. **Deploy FREE on [`Codespace,`](https://github.com/codespaces/new)**
-7. **Deploy on [`Replit,`](https://replit.com/github/Astropeda/Gnime-md)**
+6. **Deploy FREE on [`Codespace`](https://github.com/codespaces/new)**
+7. **Deploy on [`Replit`](https://replit.com/github/Astropeda/Gnime-md)**
+8. **Delpoy on [`Render`](https://dashboard.render.com/select-repo?type=web)**
 ##
 
 - **If You Don't Have Any MongoDB Url Then, Use This Public one.!**
