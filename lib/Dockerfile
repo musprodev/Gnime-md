@@ -5,7 +5,7 @@ FROM node:14
 WORKDIR /root/Astropeda
 
 # Clone the GitHub repository
-RUN git clone https://github.com/Astropeda/gnime-md .
+RUN git clone https://github.com/Astropeda/Gnime-md .
 
 # Install dependencies
 RUN npm install
