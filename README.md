@@ -6,7 +6,7 @@
     <img alt=Support height="350" src="https://leadier-umbrellas.000webhostapp.com/Gnime-logos.jpeg"> 
     </p>
     <p align="center">
-<a href="https://git.io/typing-svg"><img src="(https://readme-typing-svg.demolab.com?font=Poppins&weight=600&pause=1000&color=DBEDF7&center=true&random=false&width=435&lines=GNIME-MD;MUTLI+FUNCTIONAL;WHATSAPP+BOT;MADE+BY;ASTROPEDA+2023)](https://git.io/typing-svg)" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src=(https://readme-typing-svg.demolab.com?font=Poppins&weight=600&pause=1000&color=DBEDF7&center=true&random=false&width=435&lines=GNIME-MD;MUTLI+FUNCTIONAL;WHATSAPP+BOT;MADE+BY;ASTROPEDA+2023)](https://git.io/typing-svg)" alt="Typing SVG" /></a>
   </p>
 
 <p align="center">
