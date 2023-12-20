@@ -27,9 +27,9 @@
  <a href="https://github.com/Astropeda/Gnime-Md/blob/main/LICENCE">
 <img src='https://img.shields.io/github/license/Astropeda/Gnime-Md?color=%231e81b0&style=for-the-badge' width="143px">
 <p align="center"> 
-  <a aria-label="Join our chats" href="https://chat.whatsapp.com/CmY0THcJCUYEGxLJulhcRV" target="_blank">
+  <a aria-label="Join our chats" href="https://chat.whatsapp.com/L1XNePCPC8O6rw9JeQ0iLB" target="_blank">
    <img alt="whatsapp" src="https://img.shields.io/badge/Support Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-    <a aria-label="Join our chats" href="https://chat.whatsapp.com/KFe2GEMBZ9eI1bpNVotZOW" target="_blank">
+    <a aria-label="Join our chats" href="https://chat.whatsapp.com/L1XNePCPC8O6rw9JeQ0iLB" target="_blank">
    <img alt="whatsapp" src="https://img.shields.io/badge/Public Bot Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
 
 <p align="center"><img src="https://profile-counter.glitch.me/{Astropeda}/count.svg" alt="Astropeda :: Visitor's Count" /></p>
@@ -65,7 +65,7 @@
 
 - ***If You Don't Have Any MongoDB Url Then, Use This Public one.!***
 ```
-mongodb+srv://Astropeda:Gnime-Md@zubi.9g6b16y.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp
+mongodb+srv://danielpeter:beka10beka10@cluster0.ef032ix.mongodb.net/?retryWrites=true&w=majority
 ```
 - *I will Recommend You To Use Your own MongoDB Key So That You Will Not Face any Issue, Watch Tutorial  [`How To Get MongoDB Url`](https://youtu.be/HNj76uDT-uc?si=ObIoNZoP5gSZ8bSF).*
 ##
