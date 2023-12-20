@@ -1,11 +1,11 @@
 # Use an official Node.js image as a base image
-FROM node:14
+FROM quay.io/astropeda/gnime-md
 
 # Set the working directory inside the container
 WORKDIR /root/Astropeda
 
 # Clone the GitHub repository
-RUN git clone https://github.com/Astropeda/Gnime-Md .
+RUN git clone https://github.com/Astropeda/gnime-md .
 
 # Install dependencies
 RUN npm install
