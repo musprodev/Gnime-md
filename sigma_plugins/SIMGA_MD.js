@@ -24,7 +24,7 @@
   const long = String.fromCharCode(8206)
   const sɪɢᴍᴀ_readmore = long.repeat(4001)
   const sɪɢᴍᴀ_speed = require('performance-now')
-  const sɪɢᴍᴀ_ᴍᴅ = require('../lib/sigma_plugins')
+  const sɪɢᴍᴀ_ᴍᴅ = require('../lib/plugins')
   
 
   //------------------------------------------------------------------------------------
