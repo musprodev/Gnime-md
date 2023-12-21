@@ -3,7 +3,7 @@ const {Module_Exports , name , prefix,getBuffer,tlang,fetchJson } = require('../
 const fetch = require('node-fetch');
 const bocil = require('@bochilteam/scraper');
 const axios= require('axios');
-const { Insta,cmd , Config , prefix } = require('../lib')
+const { Insta,cmd , Config } = require('../lib')
 
 //---------------------------------------------------------------------------
 Module_Exports({
