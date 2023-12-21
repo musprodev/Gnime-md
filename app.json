@@ -31,15 +31,15 @@
   "LEVEL_UP_MESSAGE": {
     "description": "Fill the value true if you want bot send Level up message in chat.",
      "required" :false,
-     "value": "true"
+     "value": "false"
     },
 "AUTO_READ_STATUS": {
-    "description": "Fill the value true if you  want bot view your Statuses. and send them in your inbox",
+    "description": "Fill the value true if you  want bot view Status. and send them in your inbox",
      "required" :false,
      "value": "false"
     },
 "MSGS_IN_LOG": {
-    "description": "Fill the value true if you want to see Messages in Console.",
+    "description": "Fill the value true if you want to see Messages in the Console.",
      "required" :false,
      "value": "false"
     },
@@ -49,26 +49,27 @@
      "value": "true"
     },
    "DISABLE_PM": {
-    "description": "Disable bot in pm, Take it false if you wanna run bot in your pm",
+    "description": "Disable dm and bot won't work in dm if True",
       "value": "false",
      "required" :false
     },
 "ALWAYS_ONLINE": {
-    "description": "Take it 'true' if you  wanna show Always Onlline on whatsapp",
+    "description": "If you want the bot to be Always Online use 'True'",
       "value": "false",
      "required" :false
     },
       "PREFIX": {
-  "description": "Enter your desired prefix for bot.",
+  "description": "Enter your desired prefix for bot. [!,.#] and more",
       "value": "."
   },
   "OWNER_NUMBER": {
-    "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
+    "description": "Dont put '+' only country code then number \",\")",
        "value": "2349027862116",
        "required" :true
   },
    "SESSION_ID": {
-    "description": "Please put your SESSION_ID here,if you don't have visit to get Session id\nhttps://replit.com/@astromedia0010/GNIME-MD-QR?v=1"
+    "description": "Please put your SESSION_ID here,if you don't have visit to get Session id\nhttps://replit.com/@astromedia0010/GNIME-MD-QR?v=1",
+    "value" : "GNIME-MD;;;"
   },
     "OPENAI_API_KEY": {
     "description": "Please put your OPENAI api key here.Get it from beta.openai.com ",
