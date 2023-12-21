@@ -204,7 +204,7 @@ Module_Exports({
     let {
       data
     } = await axios.get("https://api.github.com/repos/Astropeda/Gnime-Md");
-    let cap = "﹍﹍﹍〝 " + mztit + " 〞━\n〄 *sᴛᴀʀs* " + data.stargazers_count + " sᴛᴀʀs\n〄 *ꜰᴏʀᴋs* " + data.forks_count + " ꜰᴏʀᴋs\n〄 *sᴘᴇᴇᴅ* " + latensie.toFixed(4) + " ᴍs \n┗━━━━━━━━﹍﹍\nʀᴇʟᴇᴀꜱᴇᴅ ᴅᴀᴛᴇ\n_𝟷/𝟷𝟶/𝟸𝟶𝟸𝟹_\nʀᴇᴘᴏ\n_astromedia0010@outlook.com\nᴇᴍᴀɪʟ ꜰᴏʀ ʜᴇʟᴘ\n" + scap;
+    let cap = "﹍﹍﹍〝 " + mztit + " 〞━\n〄 *sᴛᴀʀs* " + data.stargazers_count + " sᴛᴀʀs\n〄 *ꜰᴏʀᴋs* " + data.forks_count + " ꜰᴏʀᴋs\n〄 *sᴘᴇᴇᴅ* " + latensie.toFixed(4) + " ᴍs \n┗━━━━━━━━﹍﹍\nʀᴇʟᴇᴀꜱᴇᴅ ᴅᴀᴛᴇ\n_𝟷/𝟷𝟶/𝟸𝟶𝟸𝟹_\nʀᴇᴘᴏ\n_https://github.com/Astropeda/Gnime-md\nᴇᴍᴀɪʟ ꜰᴏʀ ʜᴇʟᴘ\n" + scap;
     let Maher_Zubair_repo = {
       'image': {
         'url': await botpic()

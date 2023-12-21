@@ -31,8 +31,8 @@ Module_Exports({
                 sigma.sendMessage(citel.chat, { image: buffer }, { quoted: citel })
               
              fs.unlink(media, (err) => {
-             if (err) { return console.error('File Not Deleted from From TOPHOTO AT : ' , media,'\n while Error : ' , err);  }
-             else return console.log('File deleted successfully in TOPHOTO  at : ' , media);
+             if (err) { return console.error('File Not Deleted from From TO PHOTO AT : ' , media,'\n while Error : ' , err);  }
+             else return console.log('File deleted successfully in TO PHOTO  at : ' , media);
              });
              
             })
@@ -680,8 +680,11 @@ async(Void, citel, text) => {
 
 let a = await getBuffer(`https://api.lolhuman.xyz/api/ttp6?apikey=GataDios&text=${text}`)
 
-return citel.reply(a,{packname:'SIGMA_MD',author:'ZUBI'},"sticker") 
+return citel.reply(a,{packname:'GNIME_MD',author:'ASTROPEDA'},"sticker") 
 
 }
 
 )
+///////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////

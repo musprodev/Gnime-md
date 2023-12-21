@@ -33,13 +33,13 @@ Module_Exports({
         kingcmd: "support",
         shortcut: ["sgc"],
         infocmd: "Sends official support group link.",
-        kingclass: "developer",
+        kingclass: "support",
         use: ""
       }, async (sigma, man, text) => {
         const slog = await getBuffer(global.slogo);
         await sigma.sendMessage(man.chat, {
           'image': slog,
-          'text': "﹍﹍﹍〝 ɢɴɪᴍᴇ 〞━\n〄 *ɢɴɪᴍᴇ ᴹᴰ-sᴜᴘᴘᴏʀᴛ* \n〄 *ᴍᴀɪʟ ᴜꜱ* astromedia0010@outlook.com \n┗━━━━━━━━﹍﹍",
+          'text': "﹍﹍﹍〝 ɢɴɪᴍᴇ 〞━\n〄 *ɢɴɪᴍᴇ ᴹᴰ-sᴜᴘᴘᴏʀᴛ* \n〄 *ᴍᴀɪʟ ᴜꜱ* astromedia0010@outlook.com \n〄 *ɢʀᴏᴜᴘꜱ* https://chat.whatsapp.com/L1XNePCPC8O6rw9JeQ0iLB \n┗━━━━━━━━﹍﹍",
           'contextInfo': {
             'externalAdReply': {
               'title': "ɢɴɪᴍᴇ ᴹᴰ-sᴜᴘᴘᴏʀᴛ",
@@ -609,7 +609,7 @@ Module_Exports({
 Module_Exports({
     kingcmd: "request",
     infocmd: "Sends requst to main Bot developer.",
-    kingclass: "developer",
+    kingclass: "support",
     use: 'add new feature',
 },
 async(bot, person, text,{isCreator}) => {

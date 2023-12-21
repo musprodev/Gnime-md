@@ -88,10 +88,10 @@ async (sigma, person, text) => {
       return person.reply("*_File size bigger than 200MB._*");
     }
     const url = data.dllink;
-    let inf = "﹍﹍﹍〝 " + mztit + " 〞━\n〄┏➛ *sɪɢᴍᴀ ᴹᴰ*\n〄┗➛ *ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*\n〄 ​🇦​​🇵​​🇵​ ​🇳​​🇦​​🇲​​🇪 " + data.name;
+    let inf = "﹍﹍﹍〝 " + mztit + " 〞━\n〄┏➛ *ɢɴɪᴍᴇ ᴍᴅ*\n〄┗➛ *ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*\n〄 ᴀᴘᴘ ɴᴀᴍᴇ " + data.name;
     inf += "\n〄 ᴀᴘᴘ ꜱɪᴢᴇ " + data.size;
-    inf += "\n〄 ᴠᴇʀꜱɪᴏɴ Latest";
-    inf += "\n〄 🇷​​🇪​​🇶​​🇺​​🇪​​🇸​​🇹​​🇪​​🇷​  " + person.pushName;
+    inf += "\n〄 ᴠᴇʀꜱɪᴏɴ ʟᴀᴛᴇꜱᴛ";
+    inf += "\n〄 ʀᴇQᴜᴇꜱᴛᴇʀ​  " + person.pushName;
     inf += "\n┗━━━━━━━━﹍﹍\n*╰┈➤ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ " + name.botname + '*';
     axios.get(url, {
       'responseType': "stream"
@@ -210,7 +210,7 @@ async(sigma, person, memo) => {
     },
     async(bot, citel, tax) => {
         let yts = require("secktor-pack");
-    if (!tax) return citel.send(`Example: ${prefix}video Surah Fateh`);
+    if (!tax) return citel.send(`Example: ${prefix}video Crab Rave`);
         let search = await yts(tax);
         let anu = search.videos[0];
         let urlYt = anu.url
@@ -407,7 +407,7 @@ Module_Exports({
 
     //---------------------------------------------------------------------------
     Module_Exports({
-        kingcmd: "pint",
+        kingcmd: "pintrest",
         desc: "Downloads image from pinterest.",
         category: "downloader",
         filename: __filename,
@@ -819,7 +819,7 @@ Module_Exports({
     use: 'bella ciao'
   }, async (bot, man, text) => {
     if (!text) {
-      return await man.send("*_PLease, Give Me Song Name_*\nEx: " + prefix + "play bella ciao");
+      return await man.send("*_PLease, Give Me Song Name_*\nEx: " + prefix + "Moon Men");
     }
     let yts = require("secktor-pack");
     let search = await yts(text);
