@@ -1,21 +1,4 @@
-//══════════════════════════════════════════════════════════════════════════════════════════════════════// 
-//                                                                                                      //
-//                                   MULTI-DEVICE WHATSAPP BOT                                          //
-//                                                                                                      //
-//                                            𝚅.𝟷.𝟸.𝟽                                                   // 
-//                                                                                                      //
-//              ███████╗██╗ ██████╗ ███╗   ███╗ █████╗     ███╗   ███╗██████╗                           //
-//              ██╔════╝██║██╔════╝ ████╗ ████║██╔══██╗    ████╗ ████║██╔══██╗                          //
-//              ███████╗██║██║  ███╗██╔████╔██║███████║    ██╔████╔██║██║  ██║                          //
-//              ╚════██║██║██║   ██║██║╚██╔╝██║██╔══██║    ██║╚██╔╝██║██║  ██║                          //
-//              ███████║██║╚██████╔╝██║ ╚═╝ ██║██║  ██║    ██║ ╚═╝ ██║██████╔╝                          //
-//              ╚══════╝╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝    ╚═╝     ╚═╝╚═════╝                           //
-//                                                                                                      //
-//                                          BY:MAHER-ZUBAIR                                             //
-//                                                                                                      //
-//                                                                                                      //
-//══════════════════════════════════════════════════════════════════════════════════════════════════════//
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const { dare, truth, random_question ,name } = require('../lib/truth-dare.js')
 const axios = require('axios')
 const { Module_Exports,sleep } = require('../lib')
@@ -64,7 +47,7 @@ Module_Exports({
 
 const response =await  fetch('https://official-joke-api.appspot.com/random_joke');
   const joke= await response.json();
-citel.reply( `*𝙹𝙾𝙺𝙴:* ${joke.setup}\n*𝙿𝚄𝙽𝙲𝙷𝙻𝙸𝙽𝙴:*  ${joke.punchline}`);
+citel.reply( `*ᴊᴏᴋᴇ:* ${joke.setup}\n*ᴘᴜɴᴄʜʟɪɴᴇ:*  ${joke.punchline}`);
 
 })
 //---------------------------------------------------------------------------
@@ -79,7 +62,7 @@ Module_Exports({
          fetch('https://v2.jokeapi.dev/joke/Any?type=single')
          .then(response => response.json())
          .then(data => {
-         citel.reply(`*𝙹𝙾𝙺𝙴:* ${data.joke}`); 
+         citel.reply(`*ᴊᴏᴋᴇ:* ${data.joke}`); 
   })
   .catch(error => {
      return citel.reply ('Error fetching joke:' + error);
@@ -110,10 +93,10 @@ Module_Exports({
     async(Void, man, text) => {
         var quoo = await axios.get(`https://favqs.com/api/qotd`)
         const replyf = `
-┏━━⟪⟪ ${mztit} ⟫━⦿
-┃✗ *•𝙲𝙾𝙽𝚃𝙴𝙽𝚃•* ${quoo.data.quote.body}
-┃✗ *•𝙰𝚄𝚃𝙷𝙾𝚁•* ${quoo.data.quote.author}  
-┗━━━━━━━━━━⦿ `
+┏━━「 ${mztit} 」━▣
+┃⁞❏. *ᴄᴏɴᴛᴇɴᴛ* ${quoo.data.quote.body}
+┃⁞❏. *ᴀᴜᴛʜᴏʀ* ${quoo.data.quote.author}  
+┗━━━━━━━━━━▣ `
 return man.reply(replyf)
     }
  
@@ -127,11 +110,11 @@ return man.reply(replyf)
     },
     async(Void, citel, text) => {
         try{
-            let { data } = await axios.get(`http://api.urbandictionary.com/v0/define?term=${text}`)
+            let { data } = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${text}`)
             var textt = `
-            *𝚆𝙾𝚁𝙳:* ${text}
-            *𝙳𝙴𝙵𝙸𝙽𝙸𝚃𝙸𝙾𝙽:* ${data.list[0].definition.replace(/\[/g, "").replace(/\]/g, "")}
-            *𝙴𝚇𝙰𝙼𝙿𝙻𝙴:* ${data.list[0].example.replace(/\[/g, "").replace(/\]/g, "")}`
+            *ᴡᴏʀᴅ:* ${text}
+            *ᴅᴇꜰɪɴɪᴛɪᴏɴ:* ${data.list[0].definition.replace(/\[/g, "").replace(/\]/g, "")}
+            *ᴇxᴀᴍᴘʟᴇ:* ${data.list[0].example.replace(/\[/g, "").replace(/\]/g, "")}`
             return citel.reply(textt)
                     } catch {
                         return citel.reply(`No result for ${text}`)
@@ -237,7 +220,5 @@ await sleep(1000)
 
     )
 
-// These Fun Commands are Developed By @Maher-Zubair
-// Whatsapp +923466319114
-// Usage And CopyRights Are Reserved
+/////////////////////////////////
 

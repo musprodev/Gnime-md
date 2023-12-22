@@ -1,23 +1,6 @@
-//══════════════════════════════════════════════════════════════════════════════════════════════════════// 
-//                                                                                                      //
-//                                   MULTI-DEVICE WHATSAPP BOT                                          //
-//                                                                                                      //
-//                                            𝚅.𝟷.𝟸.𝟽                                                   // 
-//                                                                                                      //
-//              ███████╗██╗ ██████╗ ███╗   ███╗ █████╗     ███╗   ███╗██████╗                           //
-//              ██╔════╝██║██╔════╝ ████╗ ████║██╔══██╗    ████╗ ████║██╔══██╗                          //
-//              ███████╗██║██║  ███╗██╔████╔██║███████║    ██╔████╔██║██║  ██║                          //
-//              ╚════██║██║██║   ██║██║╚██╔╝██║██╔══██║    ██║╚██╔╝██║██║  ██║                          //
-//              ███████║██║╚██████╔╝██║ ╚═╝ ██║██║  ██║    ██║ ╚═╝ ██║██████╔╝                          //
-//              ╚══════╝╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝    ╚═╝     ╚═╝╚═════╝                           //
-//                                                                                                      //
-//                                          BY:MAHER-ZUBAIR                                             //
-//                                                                                                      //
-//                                                                                                      //
-//══════════════════════════════════════════════════════════════════════════════════════════════════════//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const { Module_Exports,sck,sck1, getAdmin, tlang, prefix,name } = require('../lib')
-
-    //---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
 Module_Exports({
         kingcmd: "act",
         shortcut:['activate','active'],
@@ -34,7 +17,7 @@ Module_Exports({
         const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) :false;
         //-----------------------------------------
         if (!citel.isGroup) return citel.reply(tlang().group)
-        if (!text) return citel.reply(`*_Please provide me term like like_*\n1-events\n2-antilink\n3-nsfw\n4-bot`)
+        if (!text) return citel.reply(`*_Please provide me term like like_*\n1-events\n2-antilink\n3-bot`)
         if (isCreator){console.log("this is a Bot Number in Act Functions")}
         else if (!isAdmins) return citel.reply(tlang().admin)
         switch (text.split(" ")[0]) {
@@ -97,24 +80,9 @@ Module_Exports({
                     }
                 }
                 break
-            case 'nsfw':
-                {
-                    let checkgroup = await sck.findOne({ id: citel.chat })
-                    if (!checkgroup) {
-                        await new sck({ id: citel.chat, nsfw: "true" })
-                            .save()
-                        return citel.reply("*_Successfully Enabled NSFW_*")
-                    } else {
-                        if (checkgroup.nsfw == "true") return citel.reply("*NSFW* is already enabled")
-                        await sck.updateOne({ id: citel.chat }, { nsfw: "true" })
-                        citel.reply("Successfully Enabled *NSFW*")
-                        return
-                    }
-                }
-                break
             default:
                 {
-                    citel.reply("Please provide me term like.\n1-events\n2-antilink\n3-nsfw\n4-economy")
+                    citel.reply("Please provide me term like.\n1-events\n2-antilink\n3-economy")
                 }
         }
     }
