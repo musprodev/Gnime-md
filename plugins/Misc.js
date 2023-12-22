@@ -514,7 +514,7 @@ const buffer = await sticker.toBuffer();
 
  Module_Exports({
              kingcmd: "gnimebot",
-             shortcut : ["chatbot","sbot","sigmachatbot"],
+             shortcut : ["chatbot","sbot","gnimechatbot"],
              infocmd: "activates and deactivates chatbot.\nuse buttons to toggle.",
              kingclass: "misc",
              kingpath: __filename

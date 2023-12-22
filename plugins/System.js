@@ -312,7 +312,7 @@ Module_Exports({
         },
         async(sigma, citel, text, {isCreator}) => {
           let get = text;
-          let alivemessage = `*ι αм σηℓιηє нσω ¢αη ι нєℓρ уσυ*\n*_To Update ALive Message Use_*\n*Eg: _${prefix}alive Your_Alive_Message_*`;
+          let alivemessage = `*ι αм σηℓιηє нσω ¢αη ι нєℓρ уσυ*`;
           let urll = '';     
           let image = false;
           let video = false;

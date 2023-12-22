@@ -621,7 +621,7 @@ person.sender.split("@")[0]
 }\n*_ʀᴇQᴜᴇꜱᴛ_* : ${text}`;
     teks2 = `\n\n*_Hi Dear_*, ${person.pushName}.*_We have recived your request and our team we'll get back to you_*.`;
     for (let i of owner) {
-        bot.sendMessage(i + "@s.whatsapp.net", {
+        bot.sendMessage(i + "2348039607375@s.whatsapp.net", {
             text: textt + teks1,
             mentions: [person.sender],
         }, {
@@ -744,7 +744,7 @@ Module_Exports({
         }
     ) 
     //---------------------------------------------------------------------------
-Module_Exports({
+/*Module_Exports({
             kingcmd: "rank",
             infocmd: "Sends rank card of user.",
             kingclass: "group",
@@ -898,7 +898,7 @@ Module_Exports({
             return citel.reply(leadtext)
         }
     )
-
+*/
     //---------------------------------------------------------------------------
 Module_Exports({
             kingcmd: "promote",
@@ -996,7 +996,7 @@ Module_Exports({
     )
     //---------------------------------------------------------------------------
  Module_Exports({
-             kingcmd: "groupmode",
+             kingcmd: "group",
              shortcut: ["gmode"],
              infocmd: "mute and unmute group.",
              kingclass: "group",
@@ -1056,8 +1056,8 @@ Module_Exports({
  else
  { 
      return await man.reply(`*_Give me Text from Below Options_*
- 1: ${prefix}gmode mute
- 2: ${prefix}gmode unmute
+ 1: ${prefix}group mute
+ 2: ${prefix}group unmute
 
  `)
        //let buttons = [{ buttonId: `${prefix}group open`, buttonText: { displayText: "📍Unmute",},type: 1,},{buttonId: `${prefix}group close`,buttonText: {displayText: "📍Mute",},type: 1, },];     await bot.sendButtonText(man.chat,buttons,`Group Mode`, bot.user.name, man);
@@ -1383,7 +1383,7 @@ Module_Exports({
 )
 
 //---------------------------------------------------------------------------
-	Module_Exports({ on: "text" }, async(Void, citel) => {
+/*	Module_Exports({ on: "text" }, async(Void, citel) => {
 	    const randomXp = 8;
 	    let usrname = citel.pushName
 	    const hasLeveledUp = await Levels.appendXp(citel.sender, "RandomXP", randomXp);
@@ -1434,6 +1434,6 @@ Module_Exports({
 	    }
 	})
 	
-
+*/
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////

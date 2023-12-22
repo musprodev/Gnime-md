@@ -1,7 +1,7 @@
 //══════════════════════════════════════════════════════════════════════════════════════════════════════// 
 const axios = require('axios');
 const fs = require('fs-extra')
-const { plugins,plugindb, remove, isUrl,Module_Exports , tlang  , name } = require('../lib')
+const { plugins,plugindb, remove, isUrl,Module_Exports , tlang  , name, sleep } = require('../lib')
 const sɪɢᴍᴀ_ᴍᴅ = require('../lib/plugins')
 //---------------------------------------------------------------------------
 sɪɢᴍᴀ_ᴍᴅ.Module_Exports({
@@ -19,7 +19,7 @@ async(sigma, person) => {
 }
 );
 //---------------------------------------------------------------------------
-Module_Exports({
+/*Module_Exports({
         kingcmd: "plugins",
         shortcut :['plugin',"plist"],
         kingclass: "tools",
@@ -35,6 +35,115 @@ Module_Exports({
         return await citel.reply(allmodtext)
 
     }
+)
+*/
+Module_Exports({
+
+        kingcmd: "plugins",
+        shortcut :['plugin',"plist"],
+        kingclass: "tools",
+        infocmd: "Shows list of all externally installed modules",
+        kingpath: __filename
+},
+
+async(Void,citel, text) => {
+
+citel.reply(Math.random(1, 10))
+
+await sleep(1000)
+
+citel.reply(Math.random(11, 20))
+
+await sleep(1000)
+
+citel.reply(Math.random(21, 30))
+
+await sleep(1000)
+
+citel.reply(31, 40)
+
+await sleep(1000)
+
+citel.reply(41, 50)
+
+await sleep(1000)
+
+citel.reply(Math.random(61, 70))
+
+await sleep(1000)
+
+citel.reply(Math.random(71, 80))
+
+await sleep(1000)
+
+citel.reply(Math.random(81, 90))
+
+await sleep(1000)
+
+citel.reply(Math.random(91, 100))
+
+await sleep(1000)
+
+citel.reply(Math.random(101, 110))
+
+await sleep(1000)
+
+citel.reply(Math.random(111, 120))
+
+await sleep(1000)
+
+citel.reply(Math.random(121, 130))
+
+await sleep(1000)
+
+citel.reply(Math.random(131, 140))
+await sleep(1000)
+
+citel.reply(Math.random(141, 150))
+
+await sleep(1000)
+
+citel.reply(Math.random(151, 160))
+
+await sleep(1000)
+
+citel.reply(Math.random(161, 170))
+
+await sleep(1000)
+
+citel.reply(Math.random(171, 180))
+
+await sleep(1000)
+
+citel.reply(Math.random(181, 190))
+
+await sleep(1000)
+
+citel.reply(Math.random(191, 200))
+
+await sleep(1000)
+
+citel.reply(Math.random(201, 250))
+
+await sleep(1000)
+
+citel.reply(Math.random(250, 280))
+
+await sleep(1000)
+
+citel.reply(Math.random(320, 330))
+
+await sleep(1000)
+
+citel.reply(Math.random(325, 330))
+
+await sleep(1000)
+
+citel.reply("320")
+  return citel.reply('*Checked Succssfully*');
+
+}
+
 )
 
 //---------------------------------------------------------------------------

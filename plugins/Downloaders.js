@@ -407,7 +407,7 @@ Module_Exports({
 
     //---------------------------------------------------------------------------
     Module_Exports({
-        kingcmd: "pintrest",
+        kingcmd: "pinetrest",
         desc: "Downloads image from pinterest.",
         category: "downloader",
         filename: __filename,
