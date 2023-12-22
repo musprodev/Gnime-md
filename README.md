@@ -5,6 +5,8 @@
   <a href="https://github.com/Astropeda">
     <img alt=Support height="250" src="https://leadier-umbrellas.000webhostapp.com/Gnime-logos.jpeg"> 
     </p>
+
+## --------------------------------------------------------------------------------------------------------------------------
     <p align="center">
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=40&duration=2000&pause=500&color=F7F7F7&center=true&random=false&width=435&lines=GNIME-MD+;MULTI+FUNCTIONAL;WHATSAPP+BOT;DEVELPOED+BY;ASTROEPDA" alt="Typing SVG" /></a>
   </p>
