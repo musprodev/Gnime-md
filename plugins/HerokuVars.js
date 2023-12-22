@@ -237,7 +237,7 @@ fetch(`https://api.heroku.com/apps/${appName}/config-vars`, {
     
     } 
 
-    Module_Exports(
+   /* Module_Exports(
       {
         kingcmd: "updatenow",
         infocmd: "update bot with main repo",
@@ -290,4 +290,4 @@ fetch(`https://api.heroku.com/apps/${appName}/config-vars`, {
            if(check==='true') return citel.reply('_Please wait..._\n_Currently 2 instances are running in Koyeb,wait to stop one of them._')
            let data = await redeploy();
            return citel.reply(data)
-      })
+      })*/
