@@ -295,7 +295,7 @@ Module_Exports({
           return citel.reply("*_Please Reply a User_*");
         }
         const timesam = moment(moment()).format("HH:mm:ss");
-        moment.tz.setDefault("Asia/Karachi").locale('id');
+        moment.tz.setDefault("Africa/Lagos").locale('id');
         try {
           let metadata = await Void.groupMetadata(citel.chat);
           await new warndb({
@@ -1113,7 +1113,7 @@ Module_Exports({
             let ttms = `${userq.xp}` / 8;
             const timenow = moment(moment())
                 .format('HH:mm:ss')
-            moment.tz.setDefault('Asia/Karachi')
+            moment.tz.setDefault('Africa/Lagos')
                 .locale('id')
 	let pfp;
             try {
