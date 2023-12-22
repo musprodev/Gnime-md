@@ -1,4 +1,4 @@
-//══════════════════════════════════════════════════════════════════════════════════════════════════════// 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const { tlang,Module_Exports } = require('../lib')
 const fs = require('fs')
 const { exec } = require('child_process')
@@ -9,7 +9,7 @@ Module_Exports({
         infocmd: "adds bass in given sound",
         kingclass: "audio",
         use: '<reply to any audio>',
-      //  react:"✅",
+        react:"✅",
     },
     async(bot, citel) => {
         let mime = citel.quoted.mtype
@@ -44,7 +44,7 @@ Module_Exports({
         infocmd: "adds blown in given audio",
         kingclass: "audio",
         use: '<reply to any audio>',
-       // react:"✅",
+        react:"✅",
     },
     async(bot, citel) => {
         let mime = citel.quoted.mtype
@@ -79,7 +79,7 @@ Module_Exports({
         infocmd: "adds deep effect in given audio",
         kingclass: "audio",
         use: '<reply to any audio>',
-      //  react:"✅",
+        react:"✅",
     },
     async(bot, citel) => {
         let mime = citel.quoted.mtype
@@ -114,7 +114,7 @@ Module_Exports({
         infocmd: "Adds fast(equilizer) in quoted audio.",
         kingclass: "audio",
         use: '<reply to any audio>',
-       // react:"✅",
+        react:"✅",
     },
     async(bot, citel) => {
         let mime = citel.quoted.mtype
@@ -149,7 +149,7 @@ Module_Exports({
         infocmd: "Adds reverse(equilizer) in quoted audio.",
         kingclass: "audio",
         use: '<reply to any audio>',
-      //  react:"✅",
+        react:"✅",
     },
     async(bot, citel) => {
         let mime = citel.quoted.mtype

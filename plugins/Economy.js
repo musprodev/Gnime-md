@@ -1,5 +1,5 @@
-//══════════════════════════════════════════════════════════════════════════════════════════════════════// 
-const { sck,sck1,getBuffer, tlang, prefix,name } = require('../lib')
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ const { sck,sck1,getBuffer, tlang, prefix,name } = require('../lib')
  const eco = require('discord-mongoose-economy')
  const ty = eco.connect(mongodb);
  const {Function} = require('../lib')
@@ -165,7 +165,7 @@ return await person.reply(`Sender: ${person.pushName}\nSuccessfully Deposited �
             } else {
                 tname = sigma.getName(h[i].userID)
             }
-str+= `*${i+1}*\n*╭─────────────★*\n〄 *ɴᴀᴍᴇ:* _${tname}_\n〄 *ᴜsᴇʀ:* _@${h[i].userID.split('@')[0]}_\n〄 *ᴡᴀʟʟᴇᴛ:* _${h[i].wallet}_\n〄 *ʙᴀɴᴋ ᴀᴍᴏᴜɴᴛ:* _${h[i].bank}_\n〄 *ʙᴀɴᴋ ᴄᴀᴘᴀᴄɪᴛʏ:* _${h[i].bankCapacity}_\n*╰─────────────★*\n\n`  	 
+str+= `*${i+1}*\n*╭─────────────★*\n┃ *ɴᴀᴍᴇ:* _${tname}_\n┃ *ᴜsᴇʀ:* _@${h[i].userID.split('@')[0]}_\n┃ *ᴡᴀʟʟᴇᴛ:* _${h[i].wallet}_\n┃ *ʙᴀɴᴋ ᴀᴍᴏᴜɴᴛ:* _${h[i].bank}_\n┃ *ʙᴀɴᴋ ᴄᴀᴘᴀᴄɪᴛʏ:* _${h[i].bankCapacity}_\n*╰─────────────★*\n\n`  	 
 	 arr.push(h[i].userID)
 	 }
 	     person.reply(str,{mentions:arr})
@@ -633,4 +633,6 @@ return await person.reply(str+` ${deduff}.`)
 }
 ) 
 
-// ///////////////////////////////////////////////////////////////////
+//  This Economy is Developed By @Maher-Zubair
+//  Whatsapp +923466319114
+//  Usage And CopyRights Are Reserved 

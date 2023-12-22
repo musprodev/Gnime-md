@@ -1,4 +1,4 @@
-//══════════════════════════════════════════════════════════════════════════════════════════════════════// 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const { tlang, ringtone, Module_Exports,fetchJson, sleep, botpic, getBuffer, pinterest, prefix, name } = require('../lib')
 const { mediafire } = require("../lib/mediafire.js");
 const {GDriveDl} = require('../lib/scraper.js')
@@ -43,7 +43,7 @@ Module_Exports({
 		 // if (count >= limit) break;
 		  let file_path = await fetchJson(`https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getFile?file_id=${result.stickers[count].file_id}`);
 		  let sticUrl = `https://api.telegram.org/file/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/${file_path.result.file_path}`;
-		  if(isSticker) { let a = await getBuffer(sticUrl); await citel.reply(a, { packname: name.packname, author: "Suhail-Md"  }, "sticker");} 
+		  if(isSticker) { let a = await getBuffer(sticUrl); await citel.reply(a, { packname: name.packname, author: "Gnime-md"  }, "sticker");} 
 		  else { await Void.sendMessage(citel.chat,{image : {url : sticUrl } , caption : `*_Telegram Sticker At Index ${count+1} Downloaded_*`}) } 
 		  //count++;
 		}
@@ -62,11 +62,8 @@ Module_Exports({
     kingcmd: "apk",
     infocmd: "Downloads apks.",
     kingclass: "downloader",
-
-    use: 'Whatsapp',
-},
-
-async (sigma, person, text) => {
+    use: 'Whatsapp'
+  }, async (sigma, person, text) => {
     if (!text) {
       return person.send("*_Give me App Name_*\nEx: " + prefix + "apk Whatsapp");
     }
@@ -88,11 +85,11 @@ async (sigma, person, text) => {
       return person.reply("*_File size bigger than 200MB._*");
     }
     const url = data.dllink;
-    let inf = "﹍﹍﹍〝 " + mztit + " 〞━\n〄┏➛ *ɢɴɪᴍᴇ ᴍᴅ*\n〄┗➛ *ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*\n〄 ᴀᴘᴘ ɴᴀᴍᴇ " + data.name;
-    inf += "\n〄 ᴀᴘᴘ ꜱɪᴢᴇ " + data.size;
-    inf += "\n〄 ᴠᴇʀꜱɪᴏɴ ʟᴀᴛᴇꜱᴛ";
-    inf += "\n〄 ʀᴇQᴜᴇꜱᴛᴇʀ​  " + person.pushName;
-    inf += "\n┗━━━━━━━━﹍﹍\n*╰┈➤ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ " + name.botname + '*';
+    let inf = "┏━━「" + mztit + "」━▣\n┃┏➛ *ɢɴɪᴍᴇ ᴍᴅ*\n┃┗➛ *ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*\n┃⁞❏. *ᴀᴘᴘ ɴᴀᴍᴇ* " + data.name;
+    inf += "\n┃⁞❏. *ᴀᴘᴘ ꜱɪᴢᴇ* " + data.size;
+    inf += "\n┃⁞❏. *ᴠᴇʀꜱɪᴏɴ* Latest";
+    inf += "\n┃⁞❏. *ʀᴇQᴜᴇꜱᴛᴇʀ*  " + person.pushName;
+    inf += "\n┗━━━━━━━━━━▣\n*╰┈➤ ​🇬​​🇪​​🇳​​🇪​​🇷​​🇦​​🇹​​🇪​​🇩​ ​🇧​​🇾 " + name.botname + '*';
     axios.get(url, {
       'responseType': "stream"
     }).then(_0x5197e8 => {
@@ -112,7 +109,7 @@ async (sigma, person, text) => {
       sigma.sendMessage(person.chat, _0x492877, {
         'quoted': person
       });
-      person.send(" ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ: " + text);
+      person.send(" *ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ:* " + text);
       fs.unlink(filePath, _0x2f0cff => {
         if (_0x2f0cff) {
           console.error("Error deleting file:", _0x2f0cff);
@@ -124,8 +121,7 @@ async (sigma, person, text) => {
       fs.unlink(filePath);
       return person.reply("*_Apk not Found, Sorry_*");
     });
-  }
-)
+  });
   //---------------------------------------------------------------------------
 Module_Exports({
             kingcmd: "gdrive",
@@ -165,10 +161,10 @@ Module_Exports({
     infocmd: "Downloads github repo",
     kingclass: "downloader",
     kingpath: __filename,
-    use: 'https://github.com/Astropeda/Gnime-md',
+    use: 'https://github.com/Maher-Zubair/SIGMA-MD',
 },
 async(sigma, person, tax) => {
-function _0xda55(_0x28fa32,_0x5445d5){const _0x52cbbf=_0x405c();return _0xda55=function(_0x74bd91,_0x17ca32){_0x74bd91=_0x74bd91-(-0xd9*0x9+0x1*0x12f0+-0xa27);let _0x2f330a=_0x52cbbf[_0x74bd91];return _0x2f330a;},_0xda55(_0x28fa32,_0x5445d5);}const _0x599afb=_0xda55;(function(_0x251c90,_0x358396){const _0x194cd9=_0xda55,_0x30c3df=_0x251c90();while(!![]){try{const _0x2fef01=-parseInt(_0x194cd9(0x149))/(-0x3ce+0x1179+-0xdaa)*(parseInt(_0x194cd9(0x172))/(-0x5ba*-0x2+-0x14ef+-0x7*-0x15b))+parseInt(_0x194cd9(0x163))/(0x7*0x22a+0x1c07+-0x2b2a)*(parseInt(_0x194cd9(0x167))/(-0x2*-0xde5+0x10a3+-0x2c69))+-parseInt(_0x194cd9(0x15a))/(0x6*0x4f1+-0x1*-0x2608+0x43a9*-0x1)+parseInt(_0x194cd9(0x173))/(0x22c4+-0xdf4+-0x14ca)*(-parseInt(_0x194cd9(0x145))/(-0x1c6c+-0x2*0x311+0x2295))+-parseInt(_0x194cd9(0x133))/(0x21e2+0x1574+0x1ba7*-0x2)*(-parseInt(_0x194cd9(0x129))/(-0xe27*0x2+-0x161f*-0x1+-0x4*-0x18e))+-parseInt(_0x194cd9(0x14e))/(0x15*-0x19c+-0x2*-0x517+0x17a8)*(parseInt(_0x194cd9(0x135))/(-0x9f*-0x3d+0xd55*-0x1+-0x1883))+parseInt(_0x194cd9(0x143))/(0xa93+0xadf+-0x1566);if(_0x2fef01===_0x358396)break;else _0x30c3df['push'](_0x30c3df['shift']());}catch(_0x178600){_0x30c3df['push'](_0x30c3df['shift']());}}}(_0x405c,0x2ad*0x737+0x4fa3e+-0xb037e));if(!tax)return await person[_0x599afb(0x162)](_0x599afb(0x165)+_0x599afb(0x14d)+_0x599afb(0x13b)+prefix+(_0x599afb(0x168)+_0x599afb(0x13d)+_0x599afb(0x14a)+_0x599afb(0x174)+_0x599afb(0x160)+'*'));if(!tax[_0x599afb(0x144)](_0x599afb(0x14b)))return person[_0x599afb(0x162)](_0x599afb(0x153)+_0x599afb(0x13f)+_0x599afb(0x137)+_0x599afb(0x15d));try{const regex=/(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i;if(!regex[_0x599afb(0x15b)](tax))return await person[_0x599afb(0x12a)](_0x599afb(0x159)+_0x599afb(0x154)+_0x599afb(0x139)+_0x599afb(0x16e));let [_,user,repo]=tax[_0x599afb(0x130)](regex)||[];repo=repo[_0x599afb(0x158)](/.git$/,'');let url=_0x599afb(0x157)+_0x599afb(0x164)+_0x599afb(0x13c)+user+'/'+repo+_0x599afb(0x13e),filename=(await fetch(url,{'method':_0x599afb(0x15f)}))[_0x599afb(0x14f)][_0x599afb(0x16b)](_0x599afb(0x161)+_0x599afb(0x132))[_0x599afb(0x130)](/attachment; filename=(.*)/)[-0x2*0x1003+0xb43+0x14c4];await sigma[_0x599afb(0x128)+'e'](person[_0x599afb(0x134)],{'document':{'url':url},'caption':_0x599afb(0x131)+mztit+(_0x599afb(0x14c)+_0x599afb(0x12c)+_0x599afb(0x136)+_0x599afb(0x170)+_0x599afb(0x152)+_0x599afb(0x151))+user+(_0x599afb(0x12e)+_0x599afb(0x12f))+repo+(_0x599afb(0x13a)+_0x599afb(0x156)+_0x599afb(0x146)+_0x599afb(0x169)+_0x599afb(0x141)+_0x599afb(0x16d))+user+'/'+repo+(_0x599afb(0x138)+_0x599afb(0x16c))+person[_0x599afb(0x150)]+(_0x599afb(0x171)+_0x599afb(0x12d)+_0x599afb(0x155)+_0x599afb(0x166))+name[_0x599afb(0x148)]+'*','fileName':filename,'mimetype':_0x599afb(0x142)+_0x599afb(0x15e)});}catch(_0x38ce15){person[_0x599afb(0x162)](_0x599afb(0x12b)+_0x599afb(0x15c)+_0x599afb(0x147)+_0x599afb(0x16a)+_0x599afb(0x16f)+_0x599afb(0x140)+_0x38ce15);}function _0x405c(){const _0xf68b2c=['\x0a┗━━━━━━━━','86wtyZnO','31338JFEOaV','aher-Zubai','sendMessag','3303WwUNHT','reply','*_The\x20Repo','sɪɢᴍᴀ\x20ᴹᴰ*\x0a','﹍﹍\x0a*╰┈➤\x20𝙶','\x0a〄\x20*ʀᴇᴘᴏ','*\x20','match','﹍﹍﹍〝\x20','sposition','1952mmNkwR','chat','11tznjqE','〄┗➛\x20*ʀᴇᴘᴏ\x20','ed\x20is\x20inva','\x0a〄\x20*ʀᴇǫᴜ','lid\x20Reposi','\x0a〄\x20*ꜰɪʟᴇ','*\x0a\x20Ex:\x20','om/repos/','https://gi','/zipball','you\x20provid','*\x0a\x20','ttps://git','applicatio','47696364sQhtrY','includes','763cNYVEH','p\x0a〄\x20*ʀᴇᴘ','e\x20Or\x20It\x20Ma','botname','19769pKbLiY','thub.com/M','github.com','\x20〞━\x0a〄┏➛\x20*','Repo\x20Url,_','9318810YmqUPM','headers','pushName','ʜᴏʀ*\x20','*\x0a〄\x20*ᴀᴜᴛ','_The\x20link\x20','Provide\x20Va','𝙴𝙽𝙴𝚁𝙰𝚃𝙴𝙳\x20𝙱','-ᴛʏᴘᴇ*\x20zi','https://ap','replace','*_Please,\x20','8405120cpDyYT','test','\x20is\x20Privat','lid_','n/zip','HEAD','r/Gnime-Md','content-di','send','167529uXxUdY','i.github.c','*_Provide\x20','𝚈\x20','60yvljDS','gitclone\x20*','ᴏ-ʟɪɴᴋ*\x20h','y\x20Be\x20Tempo','get','ᴇsᴛᴇʀ*\x20\x20','hub.com/','try\x20Url_*','rary\x20Down_','ᴅᴏᴡɴʟᴏᴀᴅᴇʀ'];_0x405c=function(){return _0xf68b2c;};return _0x405c();}  
+function _0xda55(_0x28fa32,_0x5445d5){const _0x52cbbf=_0x405c();return _0xda55=function(_0x74bd91,_0x17ca32){_0x74bd91=_0x74bd91-(-0xd9*0x9+0x1*0x12f0+-0xa27);let _0x2f330a=_0x52cbbf[_0x74bd91];return _0x2f330a;},_0xda55(_0x28fa32,_0x5445d5);}const _0x599afb=_0xda55;(function(_0x251c90,_0x358396){const _0x194cd9=_0xda55,_0x30c3df=_0x251c90();while(!![]){try{const _0x2fef01=-parseInt(_0x194cd9(0x149))/(-0x3ce+0x1179+-0xdaa)*(parseInt(_0x194cd9(0x172))/(-0x5ba*-0x2+-0x14ef+-0x7*-0x15b))+parseInt(_0x194cd9(0x163))/(0x7*0x22a+0x1c07+-0x2b2a)*(parseInt(_0x194cd9(0x167))/(-0x2*-0xde5+0x10a3+-0x2c69))+-parseInt(_0x194cd9(0x15a))/(0x6*0x4f1+-0x1*-0x2608+0x43a9*-0x1)+parseInt(_0x194cd9(0x173))/(0x22c4+-0xdf4+-0x14ca)*(-parseInt(_0x194cd9(0x145))/(-0x1c6c+-0x2*0x311+0x2295))+-parseInt(_0x194cd9(0x133))/(0x21e2+0x1574+0x1ba7*-0x2)*(-parseInt(_0x194cd9(0x129))/(-0xe27*0x2+-0x161f*-0x1+-0x4*-0x18e))+-parseInt(_0x194cd9(0x14e))/(0x15*-0x19c+-0x2*-0x517+0x17a8)*(parseInt(_0x194cd9(0x135))/(-0x9f*-0x3d+0xd55*-0x1+-0x1883))+parseInt(_0x194cd9(0x143))/(0xa93+0xadf+-0x1566);if(_0x2fef01===_0x358396)break;else _0x30c3df['push'](_0x30c3df['shift']());}catch(_0x178600){_0x30c3df['push'](_0x30c3df['shift']());}}}(_0x405c,0x2ad*0x737+0x4fa3e+-0xb037e));if(!tax)return await person[_0x599afb(0x162)](_0x599afb(0x165)+_0x599afb(0x14d)+_0x599afb(0x13b)+prefix+(_0x599afb(0x168)+_0x599afb(0x13d)+_0x599afb(0x14a)+_0x599afb(0x174)+_0x599afb(0x160)+'*'));if(!tax[_0x599afb(0x144)](_0x599afb(0x14b)))return person[_0x599afb(0x162)](_0x599afb(0x153)+_0x599afb(0x13f)+_0x599afb(0x137)+_0x599afb(0x15d));try{const regex=/(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i;if(!regex[_0x599afb(0x15b)](tax))return await person[_0x599afb(0x12a)](_0x599afb(0x159)+_0x599afb(0x154)+_0x599afb(0x139)+_0x599afb(0x16e));let [_,user,repo]=tax[_0x599afb(0x130)](regex)||[];repo=repo[_0x599afb(0x158)](/.git$/,'');let url=_0x599afb(0x157)+_0x599afb(0x164)+_0x599afb(0x13c)+user+'/'+repo+_0x599afb(0x13e),filename=(await fetch(url,{'method':_0x599afb(0x15f)}))[_0x599afb(0x14f)][_0x599afb(0x16b)](_0x599afb(0x161)+_0x599afb(0x132))[_0x599afb(0x130)](/attachment; filename=(.*)/)[-0x2*0x1003+0xb43+0x14c4];await sigma[_0x599afb(0x128)+'e'](person[_0x599afb(0x134)],{'document':{'url':url},'caption':_0x599afb(0x131)+mztit+(_0x599afb(0x14c)+_0x599afb(0x12c)+_0x599afb(0x136)+_0x599afb(0x170)+_0x599afb(0x152)+_0x599afb(0x151))+user+(_0x599afb(0x12e)+_0x599afb(0x12f))+repo+(_0x599afb(0x13a)+_0x599afb(0x156)+_0x599afb(0x146)+_0x599afb(0x169)+_0x599afb(0x141)+_0x599afb(0x16d))+user+'/'+repo+(_0x599afb(0x138)+_0x599afb(0x16c))+person[_0x599afb(0x150)]+(_0x599afb(0x171)+_0x599afb(0x12d)+_0x599afb(0x155)+_0x599afb(0x166))+name[_0x599afb(0x148)]+'*','fileName':filename,'mimetype':_0x599afb(0x142)+_0x599afb(0x15e)});}catch(_0x38ce15){person[_0x599afb(0x162)](_0x599afb(0x12b)+_0x599afb(0x15c)+_0x599afb(0x147)+_0x599afb(0x16a)+_0x599afb(0x16f)+_0x599afb(0x140)+_0x38ce15);}function _0x405c(){const _0xf68b2c=['\x0a┗━━━━━━━━','86wtyZnO','31338JFEOaV','aher-Zubai','sendMessag','3303WwUNHT','reply','*_The\x20Repo','sɪɢᴍᴀ\x20ᴹᴰ*\x0a','━━▣\x0a*╰┈➤\x20𝙶','\x0a┃⁞❏.\x20*ʀᴇᴘᴏ','*\x20','match','┏━━「\x20','sposition','1952mmNkwR','chat','11tznjqE','┃┗➛\x20*ʀᴇᴘᴏ\x20','ed\x20is\x20inva','\x0a┃⁞❏.\x20*ʀᴇǫᴜ','lid\x20Reposi','\x0a┃⁞❏.\x20*ꜰɪʟᴇ','*\x0a\x20Ex:\x20','om/repos/','https://gi','/zipball','you\x20provid','*\x0a\x20','ttps://git','applicatio','47696364sQhtrY','includes','763cNYVEH','p\x0a┃⁞❏.\x20*ʀᴇᴘ','e\x20Or\x20It\x20Ma','botname','19769pKbLiY','thub.com/M','github.com','\x20」━▣\x0a┃┏➛\x20*','Repo\x20Url,_','9318810YmqUPM','headers','pushName','ʜᴏʀ*\x20','*\x0a┃⁞❏.\x20*ᴀᴜᴛ','_The\x20link\x20','Provide\x20Va','𝙴𝙽𝙴𝚁𝙰𝚃𝙴𝙳\x20𝙱','-ᴛʏᴘᴇ*\x20zi','https://ap','replace','*_Please,\x20','8405120cpDyYT','test','\x20is\x20Privat','lid_','n/zip','HEAD','r/SIGMA-MD','content-di','send','167529uXxUdY','i.github.c','*_Provide\x20','𝚈\x20','60yvljDS','gitclone\x20*','ᴏ-ʟɪɴᴋ*\x20h','y\x20Be\x20Tempo','get','ᴇsᴛᴇʀ*\x20\x20','hub.com/','try\x20Url_*','rary\x20Down_','ᴅᴏᴡɴʟᴏᴀᴅᴇʀ'];_0x405c=function(){return _0xf68b2c;};return _0x405c();}  
 })  
 
   //---------------------------------------------------------------------------
@@ -180,7 +176,7 @@ function _0xda55(_0x28fa32,_0x5445d5){const _0x52cbbf=_0x405c();return _0xda55=f
     use: 'I am king',
 },
 async(sigma, person, memo) => {
-    if (!memo) return person.reply(`_Give me text to change into audio_\nEx: ${prefix}tts i am Gnime`)
+    if (!memo) return person.reply(`_Give me text to change into audio_\nEx: ${prefix}tts i am SIGMA MALE`)
     person.reply("*_Converting Your Text To Voice..._*")
     let memotts = memo
     const ttsurl = googleTTS.getAudioUrl(memotts, {
@@ -210,7 +206,7 @@ async(sigma, person, memo) => {
     },
     async(bot, citel, tax) => {
         let yts = require("secktor-pack");
-    if (!tax) return citel.send(`Example: ${prefix}video Crab Rave`);
+    if (!tax) return citel.send(`Example: ${prefix}video Surah Fateh`);
         let search = await yts(tax);
         let anu = search.videos[0];
         let urlYt = anu.url
@@ -407,7 +403,7 @@ Module_Exports({
 
     //---------------------------------------------------------------------------
     Module_Exports({
-        kingcmd: "pinetrest",
+        kingcmd: "pinterest",
         desc: "Downloads image from pinterest.",
         category: "downloader",
         filename: __filename,
@@ -415,7 +411,7 @@ Module_Exports({
     },
     async(Void, citel, text) => {
         if (!text) return citel.send(`What picture are you looking for?`)
-        citel.reply('ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ: '+text)
+        citel.reply('*ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ:* '+text)
         try {
             let anu = await pinterest(text)
             let result = anu[Math.floor(Math.random() * anu.length)]
@@ -504,7 +500,7 @@ let result4 = ` *Mᴇᴅɪᴀғɪʀᴇ Dᴏᴡɴʟᴏᴀᴅᴇʀ*
         if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`Audio File Too Big!`);
         let titleYt = infoYt.videoDetails.title;
         let randomName = getRandom(".mp3");
-        citel.reply('ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ: '+tax)
+        citel.reply('*ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ:* '+tax)
         const stream = ytdl(anu.url, {
                 filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
             })
@@ -559,16 +555,16 @@ let result4 = ` *Mᴇᴅɪᴀғɪʀᴇ Dᴏᴡɴʟᴏᴀᴅᴇʀ*
     },
     async(sigma, person, memo) => {
         let yts = require("secktor-pack");
-        if (!memo) return person.send(`Example: ${prefix}yts Crab Rave`);
+        if (!memo) return person.send(`Example: ${prefix}yts surah Rehman`);
         let search = await yts(memo);
-        let memot = "*ɢɴɪᴍᴇ ᴍᴅ* *ʏᴏᴜ-ᴛᴜʙᴇ sᴇᴀʀᴄʜ*\n\n *_Search Result From_* " + memo + "\n\n*✯────────────────────✯*\n\n";
+        let memot = "*ɢɴɪᴍᴇ ᴍᴅ* *ʏᴏᴜ-ᴛᴜʙᴇ sᴇᴀʀᴄʜ*\n\n *_Search Result From_* " + memo + "\n\n*➯────────────────────➯*\n\n";
         let no = 1;
         for (let i of search.all) {
-            memot += `ᴛɪᴛʟᴇ : ${i.title}\nᴠɪᴇᴡꜱ : ${i.views}\nᴅᴜʀᴀᴛɪᴏɴ : ${
+            memot += `*ᴛɪᴛʟᴇ* : ${i.title}\n*ᴠɪᴇᴡꜱ* : ${i.views}\n*ᴅᴜʀᴀᴛɪᴏɴ* : ${
       i.timestamp
-    }\nᴜʀʟ : ${
+    }\n*ᴜʀʟ* : ${
       i.url
-    }\n\n*✯────────────────────✯*\n`;
+    }\n\n*➯────────────────────➯*\n`;
         }
         return sigma.sendMessage(person.chat, {
             image: {
@@ -598,7 +594,7 @@ Module_Exports({
                 citel.reply("*_Give ME YouTube Link_*");
                 return;
             }
-            citel.reply('ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ: '+text)
+            citel.reply('*ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ:* '+text)
             try {
                 let urlYt = text;
                 if (!urlYt.startsWith("http")) return citel.reply("*_Plz Give ME YouTube Link_*");
@@ -677,7 +673,7 @@ Module_Exports({
                 citel.reply(`_Idiot Give YouTube Link_!`);
                 return;
             }
-            citel.reply('ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ: '+text)
+            citel.reply('*ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ:* '+text)
             let infoYt = await ytdl.getInfo(urlYt);
             //30 MIN
             if (infoYt.videoDetails.lengthSeconds >= videotime) {
@@ -756,7 +752,7 @@ Module_Exports({
                 citel.reply(`_Idiot Give YouTube Link_`);
                 return;
             }
-            citel.reply('ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ: '+text)
+            citel.reply('*ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ:* '+text)
             let infoYt = await ytdl.getInfo(urlYt);
             //30 MIN
             if (infoYt.videoDetails.lengthSeconds >= videotime) {
@@ -819,12 +815,12 @@ Module_Exports({
     use: 'bella ciao'
   }, async (bot, man, text) => {
     if (!text) {
-      return await man.send("*_PLease, Give Me Song Name_*\nEx: " + prefix + "Moon Men");
+      return await man.send("*_PLease, Give Me Song Name_*\nEx: " + prefix + "play bella ciao");
     }
     let yts = require("secktor-pack");
     let search = await yts(text);
     let i = search.all[1];
-    let cap = "*ɢɴɪᴍᴇ* *ʏᴏᴜ-ᴛᴜʙᴇ ᴘʟᴀʏᴇʀ*\n\nᴛɪᴛʟᴇ " + i.title + "\nᴛɪᴛʟᴇ " + i.timestamp + "\nᴠɪᴇᴡꜱ " + i.views + "\n*ᴜᴘʟᴏᴀᴅᴇᴅ " + i.ago + "\nᴀᴜᴛʜᴏʀ " + i.author.name + "\n*ᴜʀʟ " + i.url + ("\n🇷​​🇪​​🇶​​🇺​​🇪​​🇸​​🇹​​🇪​​🇷​ " + man.pushName + "\n\n\n*_Reply 1 For Video_* \n*_Reply 2 For Audio_*");
+    let cap = "*ɢɴɪᴍᴇ ᴍᴅ* *ʏᴏᴜ-ᴛᴜʙᴇ ᴘʟᴀʏᴇʀ*\n\n*ᴛɪᴛʟᴇ* " + i.title + "\n*ᴅᴜʀᴀᴛɪᴏɴ* " + i.timestamp + "\n*ᴠɪᴇᴡꜱ* " + i.views + "\n*ᴜᴘʟᴏᴀᴅᴇᴅ* " + i.ago + "\n*ᴀᴜᴛʜᴏʀ* " + i.author.name + "\n*ᴜʀʟ* " + i.url + ("\n*ʀᴇQᴜᴇꜱᴛᴇʀ* " + man.pushName + "\n\n\n*_Reply 1 For Video_* \n*_Reply 2 For Audio_*");
     bot.sendMessage(man.chat, {
       'image': {
         'url': i.thumbnail
@@ -842,9 +838,9 @@ Module_Exports({
   }) => {
     if (citel.quoted && citel.text) {
       const lines = citel.quoted.text.split("\n");
-      if (lines[0x0].includes("ɢɴɪᴍᴇ* *ʏᴏᴜ-ᴛᴜʙᴇ ᴘʟᴀʏᴇʀ*")) {
-        const urlLine = lines.find(_0x4d3aae => _0x4d3aae.startsWith("ᴜʀʟ"));
-        let urlYt = urlLine.replace('ᴜʀʟ', '').trim();
+      if (lines[0x0].includes("*ɢɴɪᴍᴇ ᴍᴅ* *ʏᴏᴜ-ᴛᴜʙᴇ ᴘʟᴀʏᴇʀ*")) {
+        const urlLine = lines.find(_0x4d3aae => _0x4d3aae.startsWith("*ᴜʀʟ*"));
+        let urlYt = urlLine.replace('*ᴜʀʟ*', '').trim();
         try {
           let randomName;
           if (citel.text.startsWith('1')) {
@@ -859,7 +855,7 @@ Module_Exports({
             await Void.sendMessage(citel.chat, {
               'video': fs.readFileSync(randomName),
               'mimetype': "video/mp4",
-              'caption': `*╰┈➤ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ɢɴɪᴍᴇ ${name.botname}*`
+              'caption': `*╰┈➤ ​🇬​​🇪​​🇳​​🇪​​🇷​​🇦​​🇹​​🇪​​🇩​ ​🇧​​🇾 ${name.botname}*`
             }, {
               'quoted': citel
             });
@@ -891,4 +887,4 @@ Module_Exports({
     }
   });
 
-// ////////////////////////////////////////////////////////////////////////////////////////////
+///////////

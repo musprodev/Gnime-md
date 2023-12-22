@@ -1,4 +1,5 @@
-//══════════════════════════════════════════════════════════════════════════════════════════════════════// 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 const { formatp , formatDate , tlang, botpic,Module_Exports, prefix, runtime,name , parsedJid ,sleep,performance } = require('../lib')
 const axios = require('axios')
 const fetch = require('node-fetch');
@@ -25,7 +26,7 @@ Module_Exports({
   shortcut: ["advertisement"],
   kingclass: "misc",
   infocmd: "Advertise of your Message, by sending it to provided nmbr range.",
-  use: '234803960xx,Your_text_here',
+  use: '234902786xxx,Your_text_here',
   kingpath: __filename
 }, async (Void, citel, text, {
   isCreator
@@ -34,7 +35,7 @@ Module_Exports({
     return citel.reply(tlang().owner);
   }
   if (!text) {
-    return await citel.reply("*Advertise of your Message*\n*by sending it to provided nmbr range.*\n" + prefix + "advt234902786xx,Your_text_here");
+    return await citel.reply("*Advertise of your Message*\n*by sending it to provided nmbr range.*\n" + prefix + "advt 234902786xxx,Your_text_here");
   }
   const commaIndex = text.indexOf(',');
   if (commaIndex === -0x1) {
@@ -43,7 +44,7 @@ Module_Exports({
   let inputnumber = '' + text.slice(0x0, commaIndex).trim();
   let msg = text.slice(commaIndex + 0x1).trim() + "\n\n\n" + name.caption;
   if (!inputnumber.includes('x')) {
-    return citel.send("*You did not add x in number.*\n*Ex: " + prefix + "advt 2349028786xx,Your_Message_here*  \n " + name.caption);
+    return citel.send("*You did not add x in number.*\n*Ex: " + prefix + "advt 234902786xxx,Your_Message_here*  \n " + name.caption);
   }
   await citel.send("*Sending message to given number range.!*\n*It may take some time, so wait please*\n\n" + name.caption);
   var number0 = inputnumber.split('x')[0x0];
@@ -87,7 +88,6 @@ Module_Exports({
 });
 
 
-
 //---------------------------------------------------------------------------
 Module_Exports({
         kingcmd: "chat",
@@ -109,6 +109,8 @@ Module_Exports({
 
 //---------------------------------------------------------------------------
 
+//---------------------------------------------------------------------------
+
 Module_Exports({
   'kingcmd': "gpt",
   'shortcut': ["chatgpt", "openai"],
@@ -116,7 +118,7 @@ Module_Exports({
   'infocmd': "To get open ai response"
 }, async (_0xde6281, _0x3a7abf, _0x327150) => {
   if (!_0x327150) {
-    return _0x3a7abf.reply("*_Give me Text To Get ChatGpt Response_*\n*_" + prefix + "gpt what is dogmatism_*");
+    return _0x3a7abf.reply("*_Give me Text To Get ChatGpt Response_*\n*_" + prefix + "gpt What os dogmatism_*");
   }
   try {
     const _0x45d107 = await fetch("https://aemt.me/openai?text=" + _0x327150);
@@ -134,7 +136,7 @@ Module_Exports({
   shortcut: ['dall', 'dall-e'],
   infocmd: "chat with an AI",
   kingclass: "AI",
-  use: '<Hii, Gnime>',
+  use: '<Hii, Suhail Tech Info>',
   kingpath: __filename
 }, async (Void, citel, text) => {
   if (name.OPENAI_API_KEY == '') {
@@ -195,7 +197,7 @@ Module_Exports({
   kingcmd: "script",
   shortcut: ["git", "sc", "repo"],
   infocmd: "Sends info about repo.",
-  kingclass: "support",
+  kingclass: "developer",
   use: ""
 }, async (bot, citel) => {
   timestampe = speed();
@@ -203,8 +205,8 @@ Module_Exports({
   try {
     let {
       data
-    } = await axios.get("https://api.github.com/repos/Astropeda/Gnime-Md");
-    let cap = "﹍﹍﹍〝 " + mztit + " 〞━\n〄 *sᴛᴀʀs* " + data.stargazers_count + " sᴛᴀʀs\n〄 *ꜰᴏʀᴋs* " + data.forks_count + " ꜰᴏʀᴋs\n〄 *sᴘᴇᴇᴅ* " + latensie.toFixed(4) + " ᴍs \n┗━━━━━━━━﹍﹍\nʀᴇʟᴇᴀꜱᴇᴅ ᴅᴀᴛᴇ\n_𝟷/𝟷𝟶/𝟸𝟶𝟸𝟹_\nʀᴇᴘᴏ\n_https://github.com/Astropeda/Gnime-md\nᴇᴍᴀɪʟ ꜰᴏʀ ʜᴇʟᴘ\n" + scap;
+    } = await axios.get("https://api.github.com/repos/Maher-Zubair/SIGMA-MD");
+    let cap = "┏━━「 " + mztit + " 」━▣\n┃⁞❏. *sᴛᴀʀs* " + data.stargazers_count + " sᴛᴀʀs\n┃⁞❏. *ꜰᴏʀᴋs* " + data.forks_count + " ꜰᴏʀᴋs\n┃⁞❏. *sᴘᴇᴇᴅ* " + latensie.toFixed(4) + " ᴍs \n┃⁞❏. *ᴠᴇʀsɪᴏɴ* sɪɢᴍᴀ\n┃⁞❏. *ᴅᴇᴠᴇʟᴏᴘᴇʀ* ᴀꜱᴛʀᴏᴘᴇᴅᴀ\n┗━━━━━━━━━━▣\n*ʀᴇʟᴇᴀꜱᴇᴅ ᴅᴀᴛᴇ*\n_20/𝟷2/𝟸𝟶𝟸𝟹_\n*ʀᴇᴘᴏ*\n_http://github.com/Astropeda/Gnime-md_\n" + scap;
     let Maher_Zubair_repo = {
       'image': {
         'url': await botpic()
@@ -214,7 +216,7 @@ Module_Exports({
       'footer': tlang().footer,
       'contextInfo': {
         'externalAdReply': {
-          'title': "ɢɴɪᴍᴇ ᴍᴅ ʀᴇᴘᴏ",
+          'title': "ɢɴɪᴍᴇ ᴍᴅ-ʀᴇᴘᴏ",
           'body': "ᴛᴀᴘ ʜᴇʀᴇ ꜰᴏʀ ʀᴇᴘᴏ",
           'thumbnailUrl': '',
           'thumbnail': log0,
@@ -232,6 +234,7 @@ Module_Exports({
   }
 });
 
+
 //---------------------------------------------------------------------------
 Module_Exports({
   kingcmd: "status",
@@ -245,13 +248,13 @@ async(sigma, person) => {
   timestampe = speed();
   latensie = speed() - timestampe;
   let ter = `
-﹍﹍﹍〝 ${mztit} 〞━
-〄 *_ᴜᴘ-ᴛɪᴍᴇ_* ${runtime(process.uptime())}
-〄 *_sᴘᴇᴇᴅ_* ${latensie.toFixed(4)} ᴍs 
-〄 *_ᴘʟᴀᴛғᴏʀᴍ_* ᴍᴀᴄ-ᴏs
-〄 *_ᴠᴇʀsɪᴏɴ_* ${name.VERSION} 
-〄 *_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_* *_ɢɴɪᴍᴇ ᴍᴅ_*
-┊﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
+┏━━「 ${mztit} 」━▣
+┃⁞❏. *_ᴜᴘ-ᴛɪᴍᴇ_* ${runtime(process.uptime())}
+┃⁞❏. *_sᴘᴇᴇᴅ_* ${latensie.toFixed(4)} ᴍs 
+┃⁞❏. *_ᴘʟᴀᴛғᴏʀᴍ_* ᴍᴀᴄ-ᴏs
+┃⁞❏. *_ᴠᴇʀsɪᴏɴ_* ${name.VERSION} 
+┃⁞❏. *_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_* *_ɢɴɪᴍᴇ ᴍᴅ_*
+┗━━━━━━━━━━▣
 `;
   let buttonMessaged = {
       image: {
@@ -348,8 +351,8 @@ Module_Exports({
 async(bot, man,write,{isCreator}) => {
 
 if(!isCreator) return man.reply(tlang().owner);
-let SIGMA_THEMES=`﹍﹍﹍〝 ${mztit} 〞━ \n〄 *ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʀᴇᴍɪᴜᴍ*\n〄 *ᴛʜᴇᴍᴇs ɪɴ ɢɴɪᴍᴇ ᴍᴅ*\n`
-SIGMA_THEMES+=`〄 SHELBY\n〄 JOKER\n〄 ɢɴɪᴍᴇ\n〄 PATRICK\n〄 AVENGERS\n〄 BTS\n〄 ANIME\n〄 GOJO\n〄 MOMOLAND\n〄 ADAM\n〄 AYANOKOJI\n〄 EDITH\n〄 FRIDAY\n〄 GENOS\n〄 GIDEON\n〄 GOKU\n〄 LUFFY\n〄 NARUTO\n〄 NEZUKO\n〄 PARKER\n〄 ${prefix}setvar THEME:BTS\n┊﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎`
+let SIGMA_THEMES=`┏━━「 ${mztit} 」━▣ \n┃⁞❏. *ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʀᴇᴍɪᴜᴍ*\n┃⁞❏. *ᴛʜᴇᴍᴇs ɪɴ ɢɴɪᴍᴇ ᴍᴅ*\n`
+SIGMA_THEMES+=`┃⁞❏. GNIME\n┃⁞❏. SHELBY\n┃⁞❏. JOKER\n┃⁞❏. PATRICK\n┃⁞❏. SIGMA_MD\n┃⁞❏. AVENGERS\n┃⁞❏. BTS\n┃⁞❏. ANIME\n┃⁞❏. GOJO\n┃⁞❏. MOMOLAND\n┃⁞❏. ADAM\n┃⁞❏. AYANOKOJI\n┃⁞❏. EDITH\n┃⁞❏. FRIDAY\n┃⁞❏. GENOS\n┃⁞❏. GIDEON\n┃⁞❏. GOKU\n┃⁞❏. LUFFY\n┃⁞❏. NARUTO\n┃⁞❏. NEZUKO\n┃⁞❏. PARKER\n┃⁞❏. ${prefix}setvar THEME:BTS\n┗━━━━━━━━━━▣`
 return man.reply(SIGMA_THEMES)
   
 }
@@ -358,7 +361,7 @@ return man.reply(SIGMA_THEMES)
 //--------------------------------------------------------------------------
 Module_Exports({
   kingcmd: "speed",
-  infocmd: "To check bot responding speed",
+  infocmd: "TO check bot responding speed",
   kingclass: "tools",
   use: "",
 },
@@ -369,11 +372,4 @@ const sigma_male_zubair = require('performance-now')
    let Zubair = `_ʀᴇsᴘᴏɴᴅ ʀᴀᴛᴇ ᴏꜰ_ _${name.botname}_ ɪs:\n ${latensie.toFixed(4)} ᴍs`
        return person.reply(Zubair)
 })
-///////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////

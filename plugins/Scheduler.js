@@ -1,5 +1,5 @@
-//══════════════════════════════════════════════════════════════════════════════════════════════════════// 
-const { tlang,sck,prefix,Module_Exports } = require('../lib')
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ const { tlang,sck,prefix,Module_Exports } = require('../lib')
  Module_Exports({
      kingcmd: "automute",
      infocmd: "sets auto mute time in group.",

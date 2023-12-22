@@ -1,4 +1,4 @@
-//══════════════════════════════════════════════════════════════════════════════════════════════════════// 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const axios = require('axios')
 const { sck1, tiny, fancytext,getBuffer, listall,Module_Exports , TelegraPh , name,prefix} = require('../lib')
 const fs = require('fs-extra');
@@ -31,8 +31,8 @@ Module_Exports({
                 sigma.sendMessage(citel.chat, { image: buffer }, { quoted: citel })
               
              fs.unlink(media, (err) => {
-             if (err) { return console.error('File Not Deleted from From TO PHOTO AT : ' , media,'\n while Error : ' , err);  }
-             else return console.log('File deleted successfully in TO PHOTO  at : ' , media);
+             if (err) { return console.error('File Not Deleted from From TOPHOTO AT : ' , media,'\n while Error : ' , err);  }
+             else return console.log('File deleted successfully in TOPHOTO  at : ' , media);
              });
              
             })
@@ -67,6 +67,10 @@ const quot = citel.msg.contextInfo.quotedMessage.viewOnceMessageV2;
        let anu = await sigma.downloadAndSaveMediaMessage(quot.message.videoMessage)
        return sigma.sendMessage(citel.chat,{video:{url : anu},caption : cap })
     }
+        if(citel.quoted.message.audioMessage) {
+          let anu = await sigma.downloadAndSaveMediaMessage(citel.quoted.message.audioMessage); 
+          sigma.sendMessage(citel.chat, {audio: {url: anu}});
+        }
      
   }
   //else citel.reply("```This is Not A ViewOnce Message```") 
@@ -364,7 +368,7 @@ Module_Exports({
             };
             let res = await axios.post("https://bot.lyo.su/quote/generate", body);
             let img = Buffer.alloc(res.data.result.image.length, res.data.result.image, "base64");
-            return citel.send(img,{packname:name.packname,author:'Astropeda'},"sticker")
+            return citel.send(img,{packname:name.packname,author:'Maher Zubair'},"sticker")
 
         }
     )
@@ -380,7 +384,7 @@ Module_Exports({
         async(sigma, citel, text) => {
             if (isNaN(text.split(" ")[0]) || !text) {
                 let text = tiny(
-                    `*_fancy text generator_*\n★━━━━━━━━━━━━━━━━━━━━━★\n*example: ${prefix}fancy 32 _gnime md_*\n★━━━━━━━━━━━━━━━━━━━━━★\n\n`
+                    `*_fancy text generator_*\n★━━━━━━━━━━━━━━━━━━━━━★\n*example: ${prefix}fancy 32 _gniem md is a bot_*\n★━━━━━━━━━━━━━━━━━━━━━★\n\n`
                 );
                 listall("GNIME MD").forEach((txt, num) => {
                     text += `${(num += 1)} ${txt}\n`;
@@ -461,7 +465,7 @@ async(sigma, citel, text) => {
     let media = await sigma.downloadAndSaveMediaMessage(citel.quoted)
     try {
         if (/webp/.test(mimetype)) {  let webpToMp4 = await webp2mp4File(media);  media =  webpToMp4.result; }
-        await sigma.sendMessage(citel.chat, { video: { url: media ,}, caption: `*╰┈➤ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ɢɴɪᴍᴇ ${name.botname}*`  },)
+        await sigma.sendMessage(citel.chat, { video: { url: media ,}, caption: `*╰┈➤ ​🇬​​🇪​​🇳​​🇪​​🇷​​🇦​​🇹​​🇪​​🇩​ ​🇧​​🇾 ${name.botname}*`  },)
         try{ return await fs.unlink(media);}catch(e){ return console.log("Error While Deleting Tomp4 File :  ", e)}
     }catch(e){ return console.log("*Your Request Not Be Proceed due to Error.*  \n*_Error :_* ", e)}
 }
@@ -477,7 +481,7 @@ Module_Exports({
 async(Void, citel,text) => { 
 if (!text) { text=citel.quoted.text;}
     if(!text) return citel.reply('*_Please Reply To Any Text To Get Link._*');
-    let data = await pastebin.createPaste(text, "Astropeda");
+    let data = await pastebin.createPaste(text, "Maher Zubair");
     return citel.reply(`*_Here is your link._*\n`+data+`\n${sgen}`);
 }
 );
@@ -490,7 +494,7 @@ Module_Exports({
 },
 async(Void, citel,text) => {
 let a = citel.quoted ? citel.quoted.text : citel.text;
-let { data } = await axios.get(`https://api.telegra.ph/createPage?access_token=d3b25feccb89e508a9114afb82aa421fe2a9712b963b387cc5ad71e58722&title=Gnime-Md+Bot&author_name=Maher_Zubair&content=[%7B"tag":"p","children":["${a.replace(/ /g,'+')}"]%7D]&return_content=true`);
+let { data } = await axios.get(`https://api.telegra.ph/createPage?access_token=d3b25feccb89e508a9114afb82aa421fe2a9712b963b387cc5ad71e58722&title=SIGMA-MD+Bot&author_name=Maher_Zubair&content=[%7B"tag":"p","children":["${a.replace(/ /g,'+')}"]%7D]&return_content=true`);
 return citel.reply(`*Paste created on telegraph*\nName:${util.format(data.result.title)} \nUrl: ${util.format(data.result.url)}`)
 }
 );
@@ -512,7 +516,7 @@ async(Void, citel, text) => {
 
 let a = await getBuffer(`https://api.erdwpe.com/api/maker/attp?text=${text}`)
 
-return citel.reply(a,{packname:'SIGMA_MD',author:'ZUBI'},"sticker") 
+return citel.reply(a,{packname:'GNIME MD',author:'ASTROPEDA'},"sticker") 
 
 }
 
@@ -536,7 +540,7 @@ async(Void, citel, text) => {
 
 let a = await getBuffer(`https://api.lolhuman.xyz/api/attp?apikey=GataDios&text=${text}`)
 
-return citel.reply(a,{packname:'SIGMA_MD',author:'ZUBI'},"sticker") 
+return citel.reply(a,{packname:'GNIME-MD',author:'ASTROPEDA'},"sticker") 
 
 }
 
@@ -560,7 +564,7 @@ async(Void, citel, text) => {
 
 let a = await getBuffer(`https://api.lolhuman.xyz/api/attp2?apikey=GataDios&text=${text}`)
 
-return citel.reply(a,{packname:'SIGMA_MD',author:'ZUBI'},"sticker") 
+return citel.reply(a,{packname:'GNIME-MD',author:'ASTROPEDA'},"sticker") 
 
 }
 
@@ -584,7 +588,7 @@ async(Void, citel, text) => {
 
 let a = await getBuffer(`https://api.lolhuman.xyz/api/ttp?apikey=GataDios&text=${text}`)
 
-return citel.reply(a,{packname:'SIGMA_MD',author:'ZUBI'},"sticker") 
+return citel.reply(a,{packname:'GNIME-MD',author:'ASTROPEDA'},"sticker") 
 
 }
 
@@ -608,7 +612,7 @@ async(Void, citel, text) => {
 
 let a = await getBuffer(`https://api.lolhuman.xyz/api/ttp2?apikey=GataDios&text=${text}`)
 
-return citel.reply(a,{packname:'SIGMA_MD',author:'ZUBI'},"sticker") 
+return citel.reply(a,{packname:'GNIME-MD',author:'ASTROPEDA'},"sticker") 
 
 }
 
@@ -632,7 +636,7 @@ async(Void, citel, text) => {
 
 let a = await getBuffer(`https://api.lolhuman.xyz/api/ttp3?apikey=GataDios&text=${text}`)
 
-return citel.reply(a,{packname:'SIGMA_MD',author:'ZUBI'},"sticker") 
+return citel.reply(a,{packname:'GNIME-MD',author:'ASTROPEDA'},"sticker") 
 
 }
 
@@ -656,7 +660,7 @@ async(Void, citel, text) => {
 
 let a = await getBuffer(`https://api.lolhuman.xyz/api/ttp5?apikey=GataDios&text=${text}`)
 
-return citel.reply(a,{packname:'SIGMA_MD',author:'ZUBI'},"sticker") 
+return citel.reply(a,{packname:'GNIME-MD',author:'ASTROPEDA'},"sticker") 
 
 }
 
@@ -680,11 +684,9 @@ async(Void, citel, text) => {
 
 let a = await getBuffer(`https://api.lolhuman.xyz/api/ttp6?apikey=GataDios&text=${text}`)
 
-return citel.reply(a,{packname:'GNIME_MD',author:'ASTROPEDA'},"sticker") 
+return citel.reply(a,{packname:'GNIME-MD',author:'ASTROPEDA'},"sticker") 
 
 }
 
 )
-///////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////

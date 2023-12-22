@@ -1,4 +1,16 @@
-//══════════════════════════════════════════════════════════════════════════════════════════════════════// 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+
+ 
+ Module_Exports({
+            kingcmd: "reactions-pack",
+            kingclass: "reactions",
+            use: '<quote|reply|tag>',
+        },
+ **/
+
+
+
 
         const axios = require('axios')
         const { fetchJson,Module_Exports, GIFBufferToVideoBuffer} = require('../lib')

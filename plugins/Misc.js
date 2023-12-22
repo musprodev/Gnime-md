@@ -1,5 +1,5 @@
-//══════════════════════════════════════════════════════════════════════════════════════════════════════// 
-const {tlang, getAdmin, prefix, name, sck,sck1, fetchJson,getBuffer, runtime,Module_Exports } = require('../lib')
+//////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+ const {tlang, getAdmin, prefix, name, sck,sck1, fetchJson,getBuffer, runtime,Module_Exports } = require('../lib')
  let { dBinary, eBinary } = require("../lib/binary");
 const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
  const fs = require('fs')
@@ -8,7 +8,7 @@ const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter")
 
   //---------------------------------------------------------------------------
  Module_Exports({
-    kingcmd: "welcome",
+    kingcmd: "setwelcome",
     shortcut:["setwelcome","swel"],
     infocmd: "sets welcome message in specific group.",
     kingclass: "group",
@@ -30,7 +30,7 @@ async(Void, citel, text,{ isCreator }) => {
       let num = citel.sender;
   
       var welcome_messages = text.replace(/@pp/g, '').replace(/@user/gi, `@${num.split("@")[0]}`).replace(/@gname/gi, metadata.subject).replace(/@desc/gi, metadata.desc);
-      try {  ppuser = await Void.profilePictureUrl(num, 'image') }catch { ppuser = 'https://leadier-umbrellas.000webhostapp.com/Gnime-logos.jpeg' ; }
+      try {  ppuser = await Void.profilePictureUrl(num, 'image') }catch { ppuser = 'https://telegra.ph/file/93f1e7e8a1d7c4486df9e.jpg' ; }
       return await Void.sendMessage(citel.chat, { image: { url: ppuser }, caption: welcome_messages,} )
 
 
@@ -47,7 +47,7 @@ async(Void, citel, text,{ isCreator }) => {
 )
  //---------------------------------------------------------------------------
 Module_Exports({
-    kingcmd: "goodbye",
+    kingcmd: "setgoodbye",
     shortcut: ["setgoodbye","setbye"],
     infocmd: "sets goodbye message in specific group.",
     kingclass: "group",
@@ -68,7 +68,7 @@ async(Void, citel, text,{ isCreator }) => {
     var ppuser;
     let num = citel.sender;
     var goodbye_messages = text.replace(/@pp/g, '').replace(/@user/gi, `@${num.split("@")[0]}`).replace(/@gname/gi, metadata.subject).replace(/@desc/gi, metadata.desc);
-    try {  ppuser = await Void.profilePictureUrl(num, 'image') }catch { ppuser = 'https://leadier-umbrellas.000webhostapp.com/Gnime-logos.jpeg' ; }
+    try {  ppuser = await Void.profilePictureUrl(num, 'image') }catch { ppuser = 'https://telegra.ph/file/93f1e7e8a1d7c4486df9e.jpg' ; }
 
         return await Void.sendMessage(citel.chat, { image: { url: ppuser }, caption: goodbye_messages, })
 
@@ -126,8 +126,8 @@ async(Void, citel, text,{ isCreator }) => {
             const data = await Void.fetchBlocklist();
             if (data.length === 0) return await citel.reply(`*_Sorry, But You don't have any Blocked Numbers._*`);
             let txt = `${name.ownername}'s *_Block List_*\n\n*_Total Blocked Users_: ${data.length}* \n\n┏━❏\t*𝘉𝘭𝘰𝘤𝘬𝘦𝘥 𝘕𝘶𝘮𝘣𝘦𝘳𝘴*━❏\n`;
-            for (let i = 0; i < data.length; i++) {      txt += `〄 ${i + 1}: wa.me/${data[i].split("@")[0]}\n`;    }
-            txt += "﹎﹎﹎﹎﹎﹎﹎﹎";
+            for (let i = 0; i < data.length; i++) {      txt += `┃ ${i + 1}: wa.me/${data[i].split("@")[0]}\n`;    }
+            txt += "┗━━━━━━━━━━━▣";
             return await Void.sendMessage(citel.chat, { text: txt });
           } catch (err) {
             console.error(err);
@@ -227,21 +227,21 @@ async(sigma, person, memo) => {
     var num = person.quoted.sender.split('@')[0];
     let pfp;
     try  {  pfp = await sigma.profilePictureUrl(person.quoted.sender, "image"); } 
-    catch (e) { pfp = await sigma.profilePictureUrl(person.sender, "image") ||  'https://leadier-umbrellas.000webhostapp.com/Gnime-logos.jpeg' ; }    //|| 'https://leadier-umbrellas.000webhostapp.com/Gnime-logos.jpeg' ;  }
+    catch (e) { pfp = await sigma.profilePictureUrl(person.sender, "image") ||  'https://telegra.ph/file/29a8c892a1d18fdb26028.jpg' ; }    //|| 'https://telegra.ph/file/29a8c892a1d18fdb26028.jpg' ;  }
     
     let username = await sck1.findOne({ id: person.quoted.sender });
     var tname = username.name;
 
     
     let Maher = `
-﹍﹍﹍〝 ${mztit} 〞━
-〄 *ᴘᴇʀsᴏɴ's ɪɴғᴏʀᴍᴀᴛɪᴏɴ*
-〄 *ɴᴀᴍᴇ* ${tname}
-〄 *ɴᴜᴍ* ${num}
-〄 *ʙɪᴏ*  ${bioo}
-〄 *sᴇᴛ-ᴀᴛ* ${setAt}
-〄   *ᴋᴇᴇᴘ ᴄᴀʟᴍ ᴅᴜᴅᴇ*
-┊﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
+┏━━「 ${mztit} 」━▣
+┃⁞❏. *ᴘᴇʀsᴏɴ's ɪɴғᴏʀᴍᴀᴛɪᴏɴ*
+┃⁞❏. *ɴᴀᴍᴇ* ${tname}
+┃⁞❏. *ɴᴜᴍ* ${num}
+┃⁞❏. *ʙɪᴏ*  ${bioo}
+┃⁞❏. *sᴇᴛ-ᴀᴛ* ${setAt}
+┃⁞❏.   *ᴋᴇᴇᴘ ᴄᴀʟᴍ ᴅᴜᴅᴇ*
+┗━━━━━━━━━━▣
 `
     let king = {            
     image: { url: pfp},
@@ -270,7 +270,7 @@ return await sigma.sendMessage(person.chat, king,{quoted:person});
          async(Void, citel, text) => {
 
 if (!citel.quoted) return citel.reply (`*Please Reply to User With Name*`);
-if ( !text ) return citel.reply( `*_Please Reply User With Name_*\n *Example: ${prefix}vcard Astropeda*`)
+if ( !text ) return citel.reply( `*_Please Reply User With Name_*\n *Example: ${prefix}vcard Maher Zubair*`)
 var words = text.split(" ");
 if (words.length >3) {   text= words.slice(0, 3).join(' ')  }
 // citel.reply(text);
@@ -354,7 +354,7 @@ const vcard = 'BEGIN:VCARD\n' +
      )
      //---------------------------------------------------------------------------
  Module_Exports({
-             kingcmd: "wame",
+             kingcmd: "mee",
              infocmd: "Makes wa me for user.",
              kingclass: "user",
              kingpath: __filename
@@ -407,13 +407,13 @@ const vcard = 'BEGIN:VCARD\n' +
         shortcut: ["ftext"],
         infocmd: "Flips given text.",
         kingclass: "misc",
-        use: 'Astropeda',
+        use: 'Maher Zubair',
         kingpath: __filename,
     },
     async(sigma, person, memo) => {
         if (!memo) return person.reply(`*_Ex: ${prefix}fliptext I am SIGMA Male_*`)
         flipe = memo.split('').reverse().join('')
-        person.reply(`﹍﹍﹍〝 ${mztit} 〞━\n〄 \`\`\`  ᴛᴇxᴛ ғʟɪᴘᴘᴇʀ ᴛᴏᴏʟ   \`\`\`\n〄 *ɢɪᴠᴇɴ ᴛᴇxᴛ*\n〄 ${memo}\n〄 *ғʟɪᴘᴇᴅ ᴛᴇxᴛ*\n〄 ${flipe}\n┊﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎`)
+        person.reply(`┏━━「 ${mztit} 」━▣\n┃⁞❏. \`\`\`  ᴛᴇxᴛ ғʟɪᴘᴘᴇʀ ᴛᴏᴏʟ   \`\`\`\n┃⁞❏. *ɢɪᴠᴇɴ ᴛᴇxᴛ*\n┃⁞❏. ${memo}\n┃⁞❏. *ғʟɪᴘᴇᴅ ᴛᴇxᴛ*\n┃⁞❏. ${flipe}\n┗━━━━━━━━━━▣`)
     
     }
     )
@@ -514,7 +514,7 @@ const buffer = await sticker.toBuffer();
 
  Module_Exports({
              kingcmd: "gnimebot",
-             shortcut : ["chatbot","sbot","gnimechatbot"],
+             shortcut : ["chatbot","gbot","gnimechatbot"],
              infocmd: "activates and deactivates chatbot.\nuse buttons to toggle.",
              kingclass: "misc",
              kingpath: __filename
@@ -541,7 +541,7 @@ const buffer = await sticker.toBuffer();
                      break
                  default:
                      {
-                        if (chatbott.worktype == "false") return await citel.reply(`*_SIGMA Chatbot Status: Disabled_* \n*_To Enable Type: ${prefix}sbot on_*`)
+                        if (chatbott.worktype == "false") return await citel.reply(`*_GNIME Chatbot Status: Disabled_* \n*_To Enable Type: ${prefix}sbot on_*`)
                         else return await citel.reply(`*GNIME Chatbot Status: Enabled* \n*_To Disable Type : ${prefix}sbot off_*`)
                         
                      }
@@ -559,7 +559,7 @@ const buffer = await sticker.toBuffer();
          },
          async(Void, citel, text) => {
              try {
-                 if (!text) return citel.reply(`Send text to be encoded.\nEx: ${prefix}ebinary hi My I am Astropeda`);
+                 if (!text) return citel.reply(`Send text to be encoded.\nEx: ${prefix}ebinary hi My I am Maher Zubair`);
  
                  let textt = text || citel.quoted.text
                  let eb = await eBinary(textt);
@@ -579,7 +579,7 @@ const buffer = await sticker.toBuffer();
          },
          async(Void, citel, text) => {
              try {
-                 if (!text) return citel.reply(`Send text to be Decoded.\nEx: ${prefix}dbinary hi My I am Astropeda`);
+                 if (!text) return citel.reply(`Send text to be Decoded.\nEx: ${prefix}dbinary hi My I am Maher Zubair`);
                  let eb = await dBinary(text);
                  citel.reply(eb);
              } catch (e) {
@@ -655,7 +655,6 @@ async(Void, citel, text,{isCreator}) => {
 })   
 } // if Statements
      //---------------------------------------------------------------------------
- 
  Module_Exports({
              kingcmd: "antispam",
              infocmd: "Kick Spamers From Group.\nuse buttons to toggle.",
@@ -695,12 +694,57 @@ else return citel.reply(`Antispam : kick Users Who Spamming in Groupn\n\nAntispa
         infocmd: "activates and deactivates antilink.\nuse buttons to toggle.",
         kingclass: "group",
         kingpath: __filename
-    },
-    async(Void, citel, text , {isCreator}) => {
-          function _0x1dd1(_0x190e77,_0x3842b6){const _0x3a2918=_0x3a29();return _0x1dd1=function(_0x1dd110,_0xc0890d){_0x1dd110=_0x1dd110-0x12f;let _0x2f3ec3=_0x3a2918[_0x1dd110];return _0x2f3ec3;},_0x1dd1(_0x190e77,_0x3842b6);}const _0x537363=_0x1dd1;(function(_0x2a498c,_0xe9d7f2){const _0x20fff1=_0x1dd1,_0x275af4=_0x2a498c();while(!![]){try{const _0x1bf60a=-parseInt(_0x20fff1(0x135))/0x1+-parseInt(_0x20fff1(0x14a))/0x2*(-parseInt(_0x20fff1(0x14b))/0x3)+parseInt(_0x20fff1(0x12f))/0x4*(parseInt(_0x20fff1(0x14e))/0x5)+-parseInt(_0x20fff1(0x139))/0x6+parseInt(_0x20fff1(0x13b))/0x7+-parseInt(_0x20fff1(0x136))/0x8+-parseInt(_0x20fff1(0x13c))/0x9*(parseInt(_0x20fff1(0x148))/0xa);if(_0x1bf60a===_0xe9d7f2)break;else _0x275af4['push'](_0x275af4['shift']());}catch(_0x96c32a){_0x275af4['push'](_0x275af4['shift']());}}}(_0x3a29,0xebdc8));if(!citel['isGroup'])return citel['reply'](tlang()[_0x537363(0x141)]);const groupAdmins=await getAdmin(Void,citel),isAdmins=citel[_0x537363(0x130)]?groupAdmins[_0x537363(0x143)](citel[_0x537363(0x131)]):![];if(!isAdmins&&!isCreator)return citel[_0x537363(0x149)](tlang()[_0x537363(0x137)]);let checkinfo=await sck['findOne']({'id':citel[_0x537363(0x142)]})||await new sck({'id':citel[_0x537363(0x142)]})[_0x537363(0x13f)](),textt=text?text[_0x537363(0x151)]()['trim']():![],action=textt?textt[_0x537363(0x13e)]('\x20')[0x0]:![];function _0x3a29(){const _0x5d7267=['3041848KwfWrd','admin','delete','3314166wTfUba','antilink\x20kick/delete/off_*','3559514diYetN','9CvvJaC','*_Antilink\x20','split','save','updateOne','group','chat','includes','send','deact','off','*_Uhh\x20Dear,\x20Please\x20Provide\x20Valid\x20Instruction_*\x0a*Eg:\x20_','1361390agAqTj','reply','26518zyirsz','237MuHrUF','\x0a\x0a*Antilink\x20Modes:*\x0a\x20\x20.antilink\x20kick\x20(Delete\x20Links\x20&\x20Kick\x20Senders)\x0a\x20\x20.antilink\x20delete\x20(Delete\x20Links\x20Only)\x0a\x20\x20.antilink\x20off\x20(Disable\x20Antilink\x20in\x20chat)\x0a\x0a\x0a','disable','126675qiyDRV','*_Anti_Link\x20Succesfully\x20set\x20to\x20kick\x20link\x20senders!_*','kick','toLowerCase','caption','Disabled','startsWith','antilink','196ZzhnRb','isGroup','sender','false','*_Anti_Link\x20Disabled\x20Succesfully!_*','*Current\x20Mode:*\x20_','762559wgiCsM'];_0x3a29=function(){return _0x5d7267;};return _0x3a29();}if(!action)return await citel[_0x537363(0x144)](_0x537363(0x13d)+(checkinfo[_0x537363(0x155)]===_0x537363(0x132)?_0x537363(0x153):'Enabled')+'\x20in\x20this\x20Group!_*\x20\x0a\x20'+(checkinfo[_0x537363(0x155)]==='false'?'':_0x537363(0x134)+checkinfo[_0x537363(0x155)]+'_')+_0x537363(0x14c)+name[_0x537363(0x152)]);else{if(action[_0x537363(0x154)](_0x537363(0x146))||action[_0x537363(0x154)](_0x537363(0x145))||action['startsWith'](_0x537363(0x14d)))return await sck[_0x537363(0x140)]({'id':citel['chat']},{'antilink':_0x537363(0x132)}),await citel['send'](_0x537363(0x133));else{if(action[_0x537363(0x154)]('kick'))return await sck[_0x537363(0x140)]({'id':citel[_0x537363(0x142)]},{'antilink':_0x537363(0x150)}),await citel[_0x537363(0x144)](_0x537363(0x14f));else{if(action['startsWith']('delete'))return await sck['updateOne']({'id':citel['chat']},{'antilink':_0x537363(0x138)}),await citel[_0x537363(0x144)]('*_Anti_Link\x20Succesfully\x20set\x20to\x20delete\x20links\x20from\x20chat!_*');else return await citel[_0x537363(0x144)](_0x537363(0x147)+prefix+_0x537363(0x13a));}}}
-
-
-}) 
+      }, async (Void, citel, text, {
+        isCreator
+      }) => {
+        if (!citel.isGroup) {
+          return citel.reply(tlang().group);
+        }
+        const groupAdmins = await getAdmin(Void, citel);
+        const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) : false;
+        if (!isAdmins && !isCreator) {
+          return citel.reply(tlang().admin);
+        }
+        let checkinfo = (await sck.findOne({
+          'id': citel.chat
+        })) || (await new sck({
+          'id': citel.chat
+        }).save());
+        let textt = text ? text.toLowerCase().trim() : false;
+        let action = textt ? textt.split(" ")[0x0] : false;
+        if (!action) {
+          return await citel.send("*_Antilink " + (checkinfo.antilink === "false" ? "Disabled" : 'Enabled') + " in this Group!_* \n " + (checkinfo.antilink === 'false' ? '' : "*Current Mode:* _" + checkinfo.antilink + '_') + "\n\n*Antilink Modes:*\n  .antilink kick (Delete Links & Kick Senders)\n  .antilink delete (Delete Links Only)\n  .antilink off (Disable Antilink in chat)\n\n\n" + name.caption);
+        } else {
+          if (action.startsWith("off") || action.startsWith("deact") || action.startsWith("disable")) {
+            await sck.updateOne({
+              'id': citel.chat
+            }, {
+              'antilink': "false"
+            });
+            return await citel.send("*_Anti_Link Disabled Succesfully!_*");
+          } else {
+            if (action.startsWith('kick')) {
+              await sck.updateOne({
+                'id': citel.chat
+              }, {
+                'antilink': "kick"
+              });
+              return await citel.send("*_Anti_Link Succesfully set to kick link senders!_*");
+            } else {
+              if (action.startsWith('delete')) {
+                await sck.updateOne({
+                  'id': citel.chat
+                }, {
+                  'antilink': "delete"
+                });
+                return await citel.send("*_Anti_Link Succesfully set to delete links from chat!_*");
+              } else {
+                return await citel.send("*_Uhh Dear, Please Provide Valid Instruction_*\n*Eg: _" + prefix + "antilink kick/delete/off_*");
+              }
+            }
+          }
+        }
+      });
      //---------------------------------------------------------------------------
  Module_Exports({ on: "body" }, async(Void, citel) => {
    if (!name.autoreaction) return 
@@ -728,4 +772,4 @@ else return citel.reply(`Antispam : kick Users Who Spamming in Groupn\n\nAntispa
  
  })
 
- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ // /////////////////////////////////////////////////////////

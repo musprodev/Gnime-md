@@ -1,5 +1,7 @@
-//══════════════════════════════════════════════════════════════════════════════════════════════════════// 
-const { Module_Exports, parseJid,getAdmin,tlang } = require("../lib/");
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+ const { Module_Exports, parseJid,getAdmin,tlang } = require("../lib/");
  const eco = require('discord-mongoose-economy')
  const ty = eco.connect(mongodb);
 
@@ -222,14 +224,12 @@ Module_Exports({ kingcmd: "ship" , kingclass: "fun" }, async(Void, citel, text) 
        shiper = members[Math.floor(Math.random() * members.length)]
        }
        let caption = `\t❣️ *Matchmaking...* ❣️ \n`
-        caption += `\t\t✯────────────────────✯\n`
+        caption += `\t\t➯────────────────────➯\n`
         caption += `@${citel.sender.split('@')[0]}  x  @${shiper.split('@')[0]}\n`
-        caption += `\t\t✯────────────────────✯\n`
+        caption += `\t\t➯────────────────────➯\n`
         caption += await couple(percentage)
         if(citel.sender.split('@')[0]===shiper.split('@')[0]) return citel.reply('```'+'Wait... What!!!,You wanna do matchmaking with yourself!!'+'```')
         await Void.sendMessage(citel.chat,{text: caption,mentions: [citel.sender,shiper]},{quoted:citel})
    }
 )
-// These Games are Developed By @Astropeda
-// whatsapp +923466319114
-// Usage and copyRights are reserved
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -1,4 +1,4 @@
-//══════════════════════════════════════════════════════════════════════════════════════════════════════// 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const { dare, truth, random_question ,name } = require('../lib/truth-dare.js')
 const axios = require('axios')
 const { Module_Exports,sleep } = require('../lib')
@@ -7,7 +7,7 @@ const fetch = require('node-fetch');
 Module_Exports({
             kingcmd: "question",
             infocmd: "Random Question.",
-            kingclass: "casual",
+            kingclass: "fun",
             kingpath: __filename,
         },
         async(Void, citel, text) => {
@@ -18,7 +18,7 @@ Module_Exports({
 Module_Exports({
             kingcmd: "truth",
             infocmd: "truth and dare(truth game.).",
-            kingclass: "casual",
+            kingclass: "game",
             kingpath: __filename,
         },
         async(Void, citel, text) => {
@@ -29,7 +29,7 @@ Module_Exports({
 Module_Exports({
             kingcmd: "dirtydare",
             infocmd: "truth and dare(dare game.).",
-            kingclass: "casual",
+            kingclass: "game",
             kingpath: __filename,
         },
         async(Void, citel, text) => {
@@ -40,7 +40,7 @@ Module_Exports({
 Module_Exports({
             kingcmd: "joke",
             infocmd: "Sends Joke in chat.",
-            kingclass: "casual",
+            kingclass: "fun",
             kingpath: __filename,
         },
         async(Void, citel, text) => { 
@@ -54,7 +54,7 @@ citel.reply( `*ᴊᴏᴋᴇ:* ${joke.setup}\n*ᴘᴜɴᴄʜʟɪɴᴇ:*  ${joke.p
 Module_Exports({
             kingcmd: "joke2",
             infocmd: "Sends Joke in chat.",
-            kingclass: "casual",
+            kingclass: "fun",
             kingpath: __filename,
         },
         async(Void, citel, text) => { 
@@ -74,12 +74,12 @@ Module_Exports({
 Module_Exports({
         kingcmd: "fact",
         infocmd: "Sends fact in chat.",
-        kingclass: "casual",
+        kingclass: "fun",
         kingpath: __filename,
     },
     async(Void, citel, text) => {
         const { data } = await axios.get(`https://nekos.life/api/v2/fact`)
-        return citel.reply(`*ꜰᴀᴄᴛ:* ${data.fact}`)   
+        return citel.reply(`*𝙵𝙰𝙲𝚃:* ${data.fact}`)   
     }
 
 )
@@ -87,16 +87,16 @@ Module_Exports({
     Module_Exports({
         kingcmd: "quotes",
         infocmd: "Sends quotes in chat.",
-        kingclass: "casual",
+        kingclass: "fun",
         kingpath: __filename,
     },
     async(Void, man, text) => {
         var quoo = await axios.get(`https://favqs.com/api/qotd`)
         const replyf = `
-﹍﹍﹍〝 ${mztit} 〞━
-〄 *ᴄᴏɴᴛᴇɴᴛ* ${quoo.data.quote.body}
-〄 *ᴀᴜᴛʜᴏʀ* ${quoo.data.quote.author}  
-┊﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎ `
+┏━━「 ${mztit} 」━▣
+┃⁞❏. *ᴄᴏɴᴛᴇɴᴛ* ${quoo.data.quote.body}
+┃⁞❏. *ᴀᴜᴛʜᴏʀ* ${quoo.data.quote.author}  
+┗━━━━━━━━━━▣ `
 return man.reply(replyf)
     }
  
@@ -105,12 +105,12 @@ return man.reply(replyf)
     Module_Exports({
         kingcmd: "define",
         infocmd: "urban dictionary.",
-        kingclass: "casual",
+        kingclass: "fun",
         kingpath: __filename,
     },
     async(Void, citel, text) => {
         try{
-            let { data } = await axios.get(`http://api.urbandictionary.com/v0/define?term=${text}`)
+            let { data } = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${text}`)
             var textt = `
             *ᴡᴏʀᴅ:* ${text}
             *ᴅᴇꜰɪɴɪᴛɪᴏɴ:* ${data.list[0].definition.replace(/\[/g, "").replace(/\]/g, "")}
@@ -130,7 +130,7 @@ Module_Exports({
 
             kingcmd: "hack",
 
-            kingclass: "casual",
+            kingclass: "fun",
 
             infocmd: "hacking prank",
 
@@ -220,4 +220,5 @@ await sleep(1000)
 
     )
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////
+

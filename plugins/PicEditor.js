@@ -1,5 +1,4 @@
-//══════════════════════════════════════════════════════════════════════════════════════════════════════// 
-const { Module_Exports,getBuffer, tlang, botpic, prefix, name } = require('../lib')
+////////////////////////////////////////////////////////////////////////////////////////////////////////////const { Module_Exports,getBuffer, tlang, botpic, prefix, name } = require('../lib')
 
 const util = require('util');
 const fs = require('fs-extra');
@@ -105,4 +104,6 @@ async(sigma, man, text) => {
 })
 //=============================================================================
 
-////////////////////////////////////////////////////////////////////////////////////////////
+//  All These Photo Editors are Developed By @Maher-Zubair
+//  Whatsapp +923466319114
+//  Usage And CopyRights Are Reserved 

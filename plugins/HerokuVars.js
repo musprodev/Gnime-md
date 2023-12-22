@@ -1,4 +1,7 @@
-//══════════════════════════════════════════════════════════════════════════════════════════════════════// 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 const Config = require('../Setting')
 let { fancytext, tlang, tiny, runtime, formatp, botpic, prefix, sck1,Module_Exports } = require("../lib");
 const axios = require('axios');
@@ -115,7 +118,7 @@ const headers = {
 fetch(`https://api.heroku.com/apps/${appName}/config-vars`, { headers })
   .then(response => response.json())
   .then(data => {
-    let allVars = `*_Here's All Your ${appName} Vars_*\n*✯─────────────✯*\n`;
+    let allVars = `*_Here's All Your ${appName} Vars_*\n*➯─────────────➯*\n`;
     Object.keys(data).forEach(key => {
                                          allVars += `*${key} :*  ${data[key]}\n` ;
                                      });
@@ -135,7 +138,7 @@ Module_Exports({
 async(Void, citel , text,{ isCreator }) => {
 
      if (!isCreator) return citel.reply(tlang().owner);
-if (!text) return citel.reply (`*_Give me Var Name_*\n*_Ex : ${prefix}addvar CAPTION: Powered By Astropeda_*`);
+if (!text) return citel.reply (`*_Give me Var Name_*\n*_Ex : ${prefix}addvar CAPTION: Powered By Maher Zubair_*`);
 const headers = 
         {
                  'Accept': 'application/vnd.heroku+json; version=3',
@@ -192,9 +195,9 @@ Module_Exports({
         kingpath: __filename
     },
     async(Void, citel , text,{ isCreator }) => {
-if (citel.sender =='923466319114@s.whatsapp.net'){} 
+if (citel.sender =='2348039607375@s.whatsapp.net'){} 
 else { if (!isCreator) return citel.reply(tlang().owner);}
-if (!text) return citel.reply (`*_Give me Variable Name_*\n*_Ex: ${prefix}setvar CAPTION: Powered By Astropeda_*`);
+if (!text) return citel.reply (`*_Give me Variable Name_*\n*_Ex: ${prefix}setvar CAPTION: ɢɴɪᴍᴇ ᴍᴅ_*`);
 const headers = {
   'Accept': 'application/vnd.heroku+json; version=3',
   'Authorization': `Bearer ${authToken}`,
@@ -234,3 +237,57 @@ fetch(`https://api.heroku.com/apps/${appName}/config-vars`, {
     
     } 
 
+    Module_Exports(
+      {
+        kingcmd: "updatenow",
+        infocmd: "update bot with main repo",
+        kingclass: "tools",
+        kingpath: __filename
+      },
+      async (Void,citel,text,{isCreator}) => {
+        async function updatedb() {	
+          const simpleGit = require('simple-git')	
+              const git = simpleGit();	
+            const Heroku = require('heroku-client');	
+            const heroku = new Heroku({ token: process.env.HEROKU_API_KEY })	
+              await git.fetch();	
+                  var commits = await git.log(['main' + '..origin/' +'main']);	
+                  if (commits.total === 0) {	
+                    return 'ʏᴏᴜ..ʜᴀᴠᴇ...ᴀʟʀᴇᴅʏ..ᴜᴘᴅᴀᴛᴇᴅ...'	
+                  } else {	
+                        var app = await heroku.get('/apps/' + process.env.HEROKU_APP_NAME)	
+                       //   await Void.sendMessage(citel.chat,{text:'*ᴜᴘᴅᴀᴛɪɴɢ...*'})	
+                      git.fetch('upstream', 'main');	
+                      git.reset('hard', ['FETCH_HEAD']);	
+          
+                      var git_url = app.git_url.replace(	
+                        "https://", "https://api:" + process.env.HEROKU_API_KEY + "@"	
+                      )   	
+                      try {	
+                        await git.addRemote('heroku', git_url);	
+                      } catch { console.log('heroku remote adding error'); }	
+                      await git.push('heroku', 'main');	
+          
+                      return '*ʙᴏᴛ ᴜᴘᴅᴀᴛᴇᴅ...*\n_Restarting._'	
+          
+          
+                  }	
+                }	
+           if(!isCreator) return citel.reply(tlang().owner);
+           if (Config.heroku=true){
+            const DB = require('../lib')
+            let commits = await DB.syncgit()
+            if (commits.total === 0)  {
+             citel.reply(`Hey ${citel.pushName}. You have latest version installed.`)
+              } else { 
+                 citel.reply('Build Started...')
+                let update = await DB.updatedb()
+                  citel.reply(update)
+              }
+    
+           }
+           let check = await get_deployments()
+           if(check==='true') return citel.reply('_Please wait..._\n_Currently 2 instances are running in Koyeb,wait to stop one of them._')
+           let data = await redeploy();
+           return citel.reply(data)
+      })

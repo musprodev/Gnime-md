@@ -1,4 +1,4 @@
-//══════════════════════════════════════════════════════════════════════════════════════════════════════// 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const moment = require('moment-timezone')
 const {fetchJson,Module_Exports, tlang, getBuffer, prefix, name,fancytext,botpic } = require('../lib')
 let gis ='' // require("g-i-s");
@@ -76,7 +76,7 @@ catch (err) { return citel.reply("```Error While Fetching Snapshot```")}
 
     //---------------------------------------------------------------------------
 Module_Exports({
-            kingcmd: "movie",
+            kingcmd: "imdb",
             kingclass: "search",
             infocmd: "Sends image of asked Movie/Series.",
             use: 'kingsman',
@@ -91,7 +91,7 @@ Module_Exports({
             
             citel.reply(fids.data)
             
-            imdbt += "⚍⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚍\n" + " ```     𝕀𝕄𝔻𝔹 𝕊𝔼𝔸ℝℂℍ```\n" + "⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎\n";
+            imdbt += "⚍⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚍\n" + " ```     𝕀𝕄𝔻𝔹 ꜱᴇᴀʀᴄʜ```\n" + "⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎⚎\n";
             imdbt += "🎬Title      : " + fids.data.Title + "\n";
             imdbt += "📅Year       : " + fids.data.Year + "\n";
             imdbt += "⭐Rated      : " + fids.data.Rated + "\n";
@@ -131,17 +131,17 @@ Module_Exports({
         try {
           let wdata = await axios.get("https://api.openweathermap.org/data/2.5/weather?q=" + text + "&units=metric&appid=060a6bcfa19809c2cd4d97a212b19273&language=en");
           let mz = '';
-          mz += "﹍﹍﹍〝 " + mztit + " 〞━\n〄┏➛ *sɪɢᴍᴀ ᴹᴰ*\n〄┗➛ *ᴡᴇᴀᴛʜᴇʀ sᴇᴀʀᴄʜ*\n〄       " + fancytext("*weather of*", 1) + " " + text + "\n";
-          mz += "〄 " + fancytext("*country*", 1) + " " + wdata.data.sys.country + "\n";
-          mz += "〄 " + fancytext("*condition*", 1) + " " + wdata.data.weather[0].main + "\n";
-          mz += "〄 " + fancytext("*description*", 1) + " " + wdata.data.weather[0].description + "\n";
-          mz += "〄 " + fancytext("*temperature*", 1) + " " + wdata.data.main.temp + "\n";
-          mz += "〄 " + fancytext("*feels-like*", 1) + " " + wdata.data.main.feels_like + "\n";
-          mz += "〄 " + fancytext("*pressure*", 1) + " " + wdata.data.main.pressure + "\n";
-          mz += "〄 " + fancytext("*humidity*", 1) + " " + wdata.data.main.humidity + "\n";
-          mz += "〄 " + fancytext("*wind-speed*", 1) + " " + wdata.data.wind.speed + "\n";
-          mz += "〄 " + fancytext("*latitude*", 1) + " " + wdata.data.coord.lat + "\n";
-          mz += "〄 " + fancytext("*longitude*", 1) + " " + wdata.data.coord.lon + "\n┗━━━━━━━━﹍﹍\n*╰┈➤ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ " + name.botname + '*';
+          mz += "┏━━「 " + mztit + " 」━▣\n┃┏➛ *ɢɴɪᴍᴇ ᴍᴅ*\n┃┗➛ *ᴡᴇᴀᴛʜᴇʀ sᴇᴀʀᴄʜ*\n┃⁞❏.       " + fancytext("*weather of*", 1) + " " + text + "\n";
+          mz += "┃⁞❏. " + fancytext("*country*", 1) + " " + wdata.data.sys.country + "\n";
+          mz += "┃⁞❏. " + fancytext("*condition*", 1) + " " + wdata.data.weather[0].main + "\n";
+          mz += "┃⁞❏. " + fancytext("*description*", 1) + " " + wdata.data.weather[0].description + "\n";
+          mz += "┃⁞❏. " + fancytext("*temperature*", 1) + " " + wdata.data.main.temp + "\n";
+          mz += "┃⁞❏. " + fancytext("*feels-like*", 1) + " " + wdata.data.main.feels_like + "\n";
+          mz += "┃⁞❏. " + fancytext("*pressure*", 1) + " " + wdata.data.main.pressure + "\n";
+          mz += "┃⁞❏. " + fancytext("*humidity*", 1) + " " + wdata.data.main.humidity + "\n";
+          mz += "┃⁞❏. " + fancytext("*wind-speed*", 1) + " " + wdata.data.wind.speed + "\n";
+          mz += "┃⁞❏. " + fancytext("*latitude*", 1) + " " + wdata.data.coord.lat + "\n";
+          mz += "┃⁞❏. " + fancytext("*longitude*", 1) + " " + wdata.data.coord.lon + "\n┗━━━━━━━━━━▣\n*╰┈➤ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ " + name.botname + '*';
           const slog = await getBuffer(global.slogo);
           let king = {
             'image': {
@@ -170,7 +170,7 @@ Module_Exports({
       });
     //---------------------------------------------------------------------------
 Module_Exports({
-            kingcmd: "horosco",
+            kingcmd: "horo",
             kingclass: "search",
             infocmd: "Gives horoscope info of user.",
             use: 'sign\n:Example: horo libra',
@@ -206,6 +206,29 @@ Module_Exports({
     )
     //---------------------------------------------------------------------------
 
+    Module_Exports({
+        kingcmd: "cricket",
+        shortcut: ['cric'],
+        kingclass: "search",
+        infocmd: "Sends info of about cricket",
+        use: '',
+        kingpath: __filename
+      }, async (bot, man, tax) => {
+        man.send(`*_Please Wait, While Getting Cricket Updates_*`);
+        const response = await fetch("https://api.cricapi.com/v1/currentMatches?apikey=f68d1cb5-a9c9-47c5-8fcd-fbfe52bace78");
+        const dat = await response.json();
+        console.log(dat);
+        for (let i = 0; i < dat.data.length; i++) {
+          tax += "\n*➯────𝐌𝐀𝐓𝐂𝐇 " + i + "────➯*";
+          tax += "\n*ᴍᴀᴛᴄʜ ɴᴀᴍᴇ* " + dat.data[i].name;
+          tax += "\n*ᴍᴀᴛᴄʜ ꜱᴛᴀᴛᴜꜱ* " + dat.data[i].status;
+          tax += "\n*ᴍᴀᴛᴄʜ ᴅᴀᴛᴇ* " + dat.data[i].dateTimeGMT;
+          tax += "\n*ᴍᴀᴛᴄʜ ꜱᴛᴀʀᴛᴇᴅ* " + dat.data[i].matchStarted;
+          tax += "\n*ᴍᴀᴛᴄʜ ᴇɴᴅᴇᴅ* " + dat.data[i].matchEnded + "\n";
+        }
+        return await man.reply(tax);
+      });
+
 //---------------------------------------------------------------------------
 Module_Exports({
             kingcmd: "google",
@@ -221,9 +244,9 @@ Module_Exports({
             google({ 'query': text}).then(res => {
                 let msg= `*Google Search From:* ${text} \n\n`;
                 for (let g of res) {
-                    msg+= `➣ *𝚃𝙸𝚃𝙻𝙴* ${g.title}\n`;
-                    msg+= `➣ *𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝚃𝙸𝙾𝙽* ${g.snippet}\n`;
-                    msg+= `➣ *𝙻𝙸𝙽𝙺* ${g.link}\n\n✯─────────────────────✯\n\n`;
+                    msg+= `➣ *ᴛɪᴛʟᴇ* ${g.title}\n`;
+                    msg+= `➣ *ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ* ${g.snippet}\n`;
+                    msg+= `➣ *ʟɪɴᴋ* ${g.link}\n\n➯─────────────────────➯\n\n`;
                 }
              
                 return citel.reply(msg);
@@ -317,6 +340,20 @@ else return citel.reply("*Google Images Not Working, Try it Later*");
             */
  })
     //---------------------------------------------------------------------------
+Module_Exports({
+            kingcmd: "couplepp",
+            shortcut:["cpp"],
+            kingclass: "search",
+            infocmd: "Sends two couples pics.",
+            kingpath: __filename,
+        },
+        async(Void, citel, text) => {
+            let anu = await fetchJson('https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json')
+            let random = anu[Math.floor(Math.random() * anu.length)]
+            Void.sendMessage(citel.chat, { image: { url: random.male }, caption: `*➯──𝙲𝙾𝚄𝙿𝙻𝙴 𝙼𝙰𝙻𝙴──➯*` }, { quoted: citel })
+            Void.sendMessage(citel.chat, { image: { url: random.female }, caption: `*➯──𝙲𝙾𝚄𝙿𝙻𝙴 𝙵𝙴𝙼𝙰𝙻𝙴──➯*` }, { quoted: citel })
+        }
+    ) 
     //---------------------------------------------------------------------------
 Module_Exports({
         kingcmd: "iswa",
@@ -326,7 +363,7 @@ Module_Exports({
         kingpath: __filename,
     },
     async(Void, citel, text) => {
- if(!text) return await citel.reply(`*_Give Me Number without + sign_*\nEx: ${prefix}iswa 234902786xx`)
+ if(!text) return await citel.reply(`*_Give Me Number without + sign_*\nEx: ${prefix}iswa 9234663191xx`)
         var inputnumber = text.split(" ")[0]
         if (!inputnumber.includes('x')) return citel.reply(`*You did not add x*\nEx: ${prefix}iswa 9234663191xx`)
         citel.reply(`*Searching WhatsApp accounts in given range...*`)
@@ -340,7 +377,7 @@ Module_Exports({
         else if (random_length == 2) { randomxx = 100 } 
         else if (random_length == 3) { randomxx = 1000 }
  
-        text = `*--〝 List of Whatsapp Numbers 〞--*\n\n`
+        text = `*--『 List of Whatsapp Numbers 』--*\n\n`
         var nobio = `\n*Bio:* || \nHey there! I am using WhatsApp.\n`
         var nowhatsapp = `\n*Numbers with no WhatsApp account within provided range.*\n`
         for (let i = 0; i < randomxx; i++) {
@@ -362,10 +399,10 @@ Module_Exports({
                   try { var anu1 = await Void.fetchStatus(anu[0].jid); } 
                   catch { var anu1 = '401' ; }
                   if (anu1 == '401' || anu1.status.length == 0) { nobio += `wa.me/${anu[0].jid.split("@")[0]}\n` ; } 
-                  else {  text += `ɴᴜᴍʙᴇʀ wa.me/${anu[0].jid.split("@")[0]}\nʙɪᴏ ${anu1.status}\nʟᴀꜱᴛ ᴜᴘᴅᴀᴛᴇ ${moment(anu1.setAt).tz('Asia/karachi').format('HH:mm:ss DD/MM/YYYY')}\n\n` ;   }
+                  else {  text += `*ɴᴜᴍʙᴇʀ* wa.me/${anu[0].jid.split("@")[0]}\n*ʙɪᴏ* ${anu1.status}\n*ʟᴀꜱᴛ ᴜᴘᴅᴀᴛᴇ* ${moment(anu1.setAt).tz('Africa/Lagos').format('HH:mm:ss DD/MM/YYYY')}\n\n` ;   }
             } catch { nowhatsapp += `${number0}${i}${number1}\n`; }
         }
-        return await citel.reply(`${text}${nobio}${nowhatsapp}*╰┈➤ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ɢɴɪᴍᴇ ${name.botname}*`)
+        return await citel.reply(`${text}${nobio}${nowhatsapp}*╰┈➤ ​🇬​​🇪​​🇳​​🇪​​🇷​​🇦​​🇹​​🇪​​🇩​ ​🇧​​🇾 ${name.botname}*`)
 
     }
 )
@@ -381,16 +418,16 @@ Module_Exports({
     async(Void, citel, text) => {
 if(!text) return await citel.reply(`*_Give Me Number without + sign_*\nEx: ${prefix}nowa 234902786xx`)
 const inputNumber = text.split(" ")[0]
-if (!inputNumber.includes('x')) return citel.reply(`*You did not add x*\nEx: ${prefix}nowa 234902786xxxx`)
+if (!inputNumber.includes('x')) return citel.reply(`*You did not add x*\nEx: ${prefix}nowa 92346631xxxx`)
 citel.reply(`*Searching for WhatsApp account in the given range...*`);
 function countInstances(string, word) { return string.split(word).length - 1; }
 const number0 = inputNumber.split('x')[0];
 const number1 = inputNumber.split('x').slice(-1)[0] || '';
 const randomLength = countInstances(inputNumber, 'x');
 const randomxx = [10, 100, 1000][randomLength - 1] || 0;
-let nobio = `\n*〝Accounts With No Bio〞* \n`;
+let nobio = `\n*『Accounts With No Bio』* \n`;
  let nobios='';
-let nowhatsapp = `*〝 Numbers With No WhatsApp〞* \n\n`;
+let nowhatsapp = `*『 Numbers With No WhatsApp』* \n\n`;
 for (let i = 0; i < randomxx; i++) 
 {
     const nu = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
@@ -405,8 +442,8 @@ for (let i = 0; i < randomxx; i++)
     } catch { nowhatsapp += `${number0}${i}${number1}\n`;  }
 }
 if(!nobios){ nobio = ''; } else {nobio += nobios+'\n' ;}
-return await citel.reply(`${nobio}${nowhatsapp}*╰┈➤ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ɢɴɪᴍᴇ ${name.botname}*`);
+return await citel.reply(`${nobio}${nowhatsapp}*╰┈➤ ​🇬​​🇪​​🇳​​🇪​​🇷​​🇦​​🇹​​🇪​​🇩​ ​🇧​​🇾 ${name.botname}*`);
   
 })
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// ////////////////////////////////////

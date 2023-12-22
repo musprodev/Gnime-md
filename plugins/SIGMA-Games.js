@@ -1,4 +1,4 @@
-//══════════════════════════════════════════════════════════════════════════════════════════════════════// 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const { Module_Exports, parseJid, getAdmin, tlang, prefix,cmd } = require("../lib");
 const Maher_Zubair_NumGuess_Game =  {};
 
@@ -261,11 +261,11 @@ const countries = {
 let captions = {
   waitTime:30,
   winReward:2000,
-  onStart :`*Capital Finding Game Started*\n*𝙿𝙻𝙰𝚈𝙴𝚁* _@$player_\n*𝚃𝙰𝚂𝙺*\n _Tell the Capital of *$country*_\n\n_Your Time Starts Now, You Have $waitTime seconds to Answer_`,
-  onTimeOut:`*Game Over, run out of time*\n\n*𝙿𝙻𝙰𝚈𝙴𝚁* _@$player_\n*𝚁𝙴𝙰𝚂𝙾𝙽* _TimeOut!, You didn't respond in Time_\n\n*𝙰𝙽𝚂𝚆𝙴𝚁*\n The Capital of *$country* is *$capital*`,
-  onLimitEnd:`*Game Over, Attempts limit Exceeded*\n\n*𝙿𝙻𝙰𝚈𝙴𝚁* _@$player_\n*𝚁𝙴𝙰𝚂𝙾𝙽* _Not responded right answer in 3 attemps_\n\n*𝙰𝙽𝚂𝚆𝙴𝚁*\n The Capital of *$country* is *$capital*`,
-  onWrongAns:`*_Idiot Your answer is not correct_*\n\n*𝙿𝙻𝙰𝚈𝙴𝚁* _@$player_\n_You have *$attempt more attempt!*_\n\n*You have $waitTime seconds to answer!*`,
-  onWinGame:`*_Superb, Your Answer is Correct_*\n*𝙿𝙻𝙰𝚈𝙴𝚁* _@$player_\n\n_Capital of *$country* is *$capital*._\n_You give right answer in *$attempt Attempt*_\n_$amount cash added in your wallet_`
+  onStart :`*Capital Finding Game Started*\n*ᴘʟᴀʏᴇʀ* _@$player_\n*ᴛᴀꜱᴋ*\n _Tell the Capital of *$country*_\n\n_Your Time Starts Now, You Have $waitTime seconds to Answer_`,
+  onTimeOut:`*Game Over, run out of time*\n\n*ᴘʟᴀʏᴇʀ* _@$player_\n*ʀᴇᴀꜱᴏɴ* _TimeOut!, You didn't respond in Time_\n\n*ᴀɴꜱᴡᴇʀ*\n The Capital of *$country* is *$capital*`,
+  onLimitEnd:`*Game Over, Attempts limit Exceeded*\n\n*ᴘʟᴀʏᴇʀ* _@$player_\n*ʀᴇᴀꜱᴏɴ* _Not responded right answer in 3 attemps_\n\n*ᴀɴꜱᴡᴇʀ*\n The Capital of *$country* is *$capital*`,
+  onWrongAns:`*_Idiot Your answer is not correct_*\n\n*ᴘʟᴀʏᴇʀ* _@$player_\n_You have *$attempt more attempt!*_\n\n*You have $waitTime seconds to answer!*`,
+  onWinGame:`*_Superb, Your Answer is Correct_*\n*ᴘʟᴀʏᴇʀ* _@$player_\n\n_Capital of *$country* is *$capital*._\n_You give right answer in *$attempt Attempt*_\n_$amount cash added in your wallet_`
   
   }
 
@@ -285,6 +285,4 @@ const _0x4ca740=_0x553e;(function(_0x287f66,_0x3144a8){const _0x142619=_0x553e,_
 [_0x941af5[_0x146d63(0x113)]];else{if(_0x2d49e7['attempts']<=0x3)await _0x1d1f4c[_0x146d63(0x11d)](_0x941af5['chat'],{'text':captions[_0x146d63(0x127)][_0x146d63(0x12d)]('$player',_0x2d49e7[_0x146d63(0x112)][_0x146d63(0x11b)]('@')[0x0])[_0x146d63(0x12d)](_0x146d63(0x114),''+(0x3-_0x2d49e7['attempts']))[_0x146d63(0x12d)](_0x146d63(0x126),_0x2d49e7[_0x146d63(0x135)]),'mentions':[_0x2d49e7['player']]}),_0x2d49e7[_0x146d63(0x137)]=setTimeout(()=>{timerFuntions(_0x1d1f4c,_0x941af5,_0x2d49e7);},_0x2d49e7[_0x146d63(0x135)]*0x3e8);else _0x2d49e7[_0x146d63(0x118)]>0x3&&(await _0x1d1f4c['sendMessage'](_0x941af5['chat'],{'text':captions[_0x146d63(0x11c)]['replace']('$player',_0x2d49e7['player'][_0x146d63(0x11b)]('@')[0x0])[_0x146d63(0x12d)](_0x146d63(0x117),_0x2d49e7[_0x146d63(0x12c)])[_0x146d63(0x12d)]('$capital',_0x2d49e7[_0x146d63(0x116)]),'mentions':[_0x2d49e7[_0x146d63(0x112)]]}),delete Maher_Zubair_Capital_Game
 [_0x941af5['sender']]);}}});function _0x83c9(){const _0x3be925=['fun','4fJOYYo','onStart','log','644829XWjaRv','2008897tgiGsl','Random\x20Question.','keys','$waitTime','onWrongAns','preAns','3096VlaObQ','secktor','random','country','replace','daily','onWinGame','$capital','chat','floor','toLowerCase','358623jOFfpI','waitTime','790RNGvRz','timer','11574hdeUeC','1776761xnedhq','winReward','$player','1690WQEDkf','player','sender','$attempt','2648750YmzyOs','capital','$country','attempts','text','8UPfhSa','split','onLimitEnd','sendMessage'];_0x83c9=function(){return _0x3be925;};return _0x83c9();}
 
-// These Games Are Developed By @Astropeda
-// Whatsapp +923466319114
-// Usage And CopyRights Are Reserved
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

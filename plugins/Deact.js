@@ -1,5 +1,5 @@
-//══════════════════════════════════════════════════════════════════════════════════════════════════════// 
-const { sck,sck1,Module_Exports, getAdmin, tlang,prefix ,name} = require('../lib')
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ const { sck,sck1,Module_Exports, getAdmin, tlang,prefix ,name} = require('../lib')
 
   
      //---------------------------------------------------------------------------
@@ -19,7 +19,7 @@ const { sck,sck1,Module_Exports, getAdmin, tlang,prefix ,name} = require('../lib
          const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) : false;
          //-----------------------------------------  
          if (!citel.isGroup) return citel.reply(tlang().group)
-         if (!text) return citel.reply(`*_Please provide me term like like_*\n1-events\n2-antilink\n3-nsfw\n4-cardgame\n5-bot`)
+         if (!text) return citel.reply(`*_Please provide me term like like_*\n1-events\n2-antilink\n3-cardgame\n4-bot`)
          if (isCreator){console.log("this is a Bot Number in Deact Functions")}
         else if (!isAdmins) return citel.reply(tlang().admin)
          switch (text.split(" ")[0]) {

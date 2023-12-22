@@ -1,5 +1,4 @@
-//══════════════════════════════════════════════════════════════════════════════════════════════════════// 
-const {Module_Exports,name } = require('../lib')
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////const {Module_Exports,name } = require('../lib')
 const hrs = new Date().getHours({ timeZone: global.timezone })
 const get_localized_date = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
@@ -7,10 +6,10 @@ Module_Exports({
     kingcmd: "devnum",
     shortcut: ["dnum"],
     infocmd: "sends developer number for contact",
-    kingclass: "support"
+    kingclass: "developer"
   }, async (Void, citel, text) => {
     await Void.sendMessage(citel.chat, {
-      'text': "﹍﹍﹍〝 ɢɴɪᴍᴇ 〞━\n〄 *ᴅᴇᴠᴇʟᴏᴘᴇʀ ɴᴀᴍᴇ* \n〄 *ᴀꜱᴛʀᴏᴘᴇᴅᴀ* \n〄 *ɴᴜᴍʙᴇʀ* https://wa.me/2348039607375\n〄 *sᴀᴠᴇ ᴍʏ ɴᴜᴍʙᴇʀ*\n〄 *ʙᴇғᴏʀᴇ ᴍᴇssᴀɢᴇ*\n┗━━━━━━━━﹍﹍\n        *ᴘᴏᴡᴇʀᴇᴅ ʙʏ* ɢɴɪᴍᴇ ᴹᴰ",
+      'text': "┏━━「 ɢɴɪᴍᴇ ᴍᴅ 」━▣\n┃⁞❏. *ᴅᴇᴠᴇʟᴏᴘᴇʀ ɴᴀᴍᴇ* \n┃⁞❏. *ᴀꜱᴛʀᴏᴘᴇᴅᴀ* \n┃⁞❏. *ɴᴜᴍʙᴇʀ* https://wa.me/2348039607375\n┃⁞❏. *sᴀᴠᴇ ᴍʏ ɴᴜᴍʙᴇʀ*\n┃⁞❏. *ʙᴇғᴏʀᴇ ᴍᴇssᴀɢᴇ*\n┗━━━━━━━━━━▣\n        *ᴘᴏᴡᴇʀᴇᴅ ʙʏ* ɢɴɪᴍᴇ ᴍᴅ",
       'contextInfo': {
         'externalAdReply': {
           'title': "ᴀꜱᴛʀᴏᴘᴇᴅᴀ",
@@ -24,12 +23,11 @@ Module_Exports({
     });
   });
 
-
     //--------------------------------------------------------------
     Module_Exports({
         kingcmd: "timenow",
     shortcut: ["tnow"],
-        infocmd: "Show Live Time Of Pakistan",
+        infocmd: "Show Live Time Of Nigeria",
         kingclass: "general",
           kingpath: __filename,
         use: '',

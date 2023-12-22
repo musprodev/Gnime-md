@@ -1,4 +1,4 @@
-//══════════════════════════════════════════════════════════════════════════════════════════════════════// 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 const DB = require('../lib/scraper')
 const { tlang, name, prefix, Module_Exports } = require('../lib')
 const simpleGit = require('simple-git');
@@ -86,7 +86,7 @@ if(name.HEROKU_APP_NAME && name.HEROKU_API_KEY )
                 process.exit(0);
        })
 }
-
+/*
 Module_Exports({
     kingcmd: "update all",
     infocmd: "Shows repo's refreshed commits.",
@@ -99,14 +99,14 @@ async(Void, citel, text,{ isCreator }) => {
     if (commits.total === 0) {
         return await citel.reply('Bot is UP-TO-DATE')
  }
- if (!isHeroku){
-    await require("simple-git")().reset("hard",["HEAD"])
-    await require("simple-git")().pull()
-    await citel.reply("_Successfully updated. Please manually update npm modules if applicable!_")
-    process.exit(0);    
-    }
-    else if (isHeroku) {
-        await fixHerokuAppName(message)
+// if (!isHeroku){
+   // await require("simple-git")().reset("hard",["HEAD"])
+   // await require("simple-git")().pull()
+   // await citel.reply("_Successfully updated. Please manually update npm modules if applicable!_")
+   // process.exit(0);    
+   // }
+    //else if (isHeroku) {
+       // await fixHerokuAppName(message)
         await citel.reply('Starting Update...')
 
  try { var app = await heroku.get('/apps/' + Config.HEROKU_APP_NAME)  }
@@ -148,6 +148,4 @@ async function fixHerokuAppName(message){
         return await setVar("HEROKU_APP_NAME",app_name,message)
     }
 }
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////
+*/
