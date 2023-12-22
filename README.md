@@ -50,8 +50,8 @@
 ### Delpoyment Methods
 1. **Star⭐ The Repository First**
 2. **Click [`FORK`](https://github.com/Astropeda/Gnime-md/fork)**
-3. **Get SESSION ID  by [`Scanning QR Code`](https://replit.com/@astromedia0010/GNIME-MD-QR?v=1). `Whatapp>Three dots>Linked Devices`**
-4. **Get a Mongodb url From [`Mongodb`](https://account.mongodb.com/).**
+3. **Get SESSION ID  by [`Scanning QR Code`](https://replit.com/@astromedia0010/GNIME-MD-QR?v=1) `Whatapp>Three dots>Linked Devices`**
+4. **Get a Mongodb url From [`Mongodb`](https://account.mongodb.com/)**
 5. **Deploy on [`Heroku`](https://heroku.com/deploy?template=https://github.com/Astropeda/Gnime-md)**
 6. **Deploy FREE on [`Codespace`](https://github.com/codespaces/new)**
 7. **Deploy on [`Replit`](https://replit.com/github/Astropeda/Gnime-md)**
