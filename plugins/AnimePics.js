@@ -1,4 +1,21 @@
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//══════════════════════════════════════════════════════════════════════════════════════════════════════// 
+//                                                                                                      //
+//                                   MULTI-DEVICE WHATSAPP BOT                                          //
+//                                                                                                      //
+//                                            𝚅.𝟷.𝟸.𝟽                                                   //
+//                                                                                                      //
+//              ███████╗██╗ ██████╗ ███╗   ███╗ █████╗     ███╗   ███╗██████╗                           //
+//              ██╔════╝██║██╔════╝ ████╗ ████║██╔══██╗    ████╗ ████║██╔══██╗                          //
+//              ███████╗██║██║  ███╗██╔████╔██║███████║    ██╔████╔██║██║  ██║                          //
+//              ╚════██║██║██║   ██║██║╚██╔╝██║██╔══██║    ██║╚██╔╝██║██║  ██║                          //
+//              ███████║██║╚██████╔╝██║ ╚═╝ ██║██║  ██║    ██║ ╚═╝ ██║██████╔╝                          //
+//              ╚══════╝╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝    ╚═╝     ╚═╝╚═════╝                           //
+//                                                                                                      //
+//                                          BY:MAHER-ZUBAIR                                             //
+//                                                                                                      //
+//                                                                                                      //
+//══════════════════════════════════════════════════════════════════════════════════════════════════════//
+
 
 const sigma_config = require('../Setting')
 let { fancytext, tlang, tiny, runtime, formatp, botpic, prefix, sck1, Module_Exports, GIFBufferToVideoBuffer } = require("../lib");
@@ -22,7 +39,7 @@ Module_Exports({
         
          let name1 = text.split("|")[0] || ''
         let name2 = text.split("|")[1] || `1`
-        let cap = text.split("|")[1] ? '': `*╰┈➤ ​🇬​​🇪​​🇳​​🇪​​🇷​​🇦​​🇹​​🇪​​🇩​ ​🇧​​🇾 ${sigma_config.botname}*`
+        let cap = text.split("|")[1] ? '': `*╰┈➤ 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 ${sigma_config.botname}*`
          
 for (let i = 0; i < name2; i++)
 {
@@ -51,7 +68,7 @@ async(Void, man,text) =>
 {
         let res=await axios.get("https://raw.githubusercontent.com/mask-sir/api.mask-ser/main/Naruto.json")
         let url =  res.data.result[Math.floor(Math.random() * res.data.result.length)];
-        return await Void.sendMessage(man.chat,{video :{url : url } , caption: `*╰┈➤ ​🇬​​🇪​​🇳​​🇪​​🇷​​🇦​​🇹​​🇪​​🇩​ ​🇧​​🇾 ${sigma_config.botname}*`  }, { quoted: man })
+        return await Void.sendMessage(man.chat,{video :{url : url } , caption: `*╰┈➤ 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 ${sigma_config.botname}*`  }, { quoted: man })
 })
 //-----------------------------------------------------------------------
 Module_Exports({
@@ -63,7 +80,7 @@ Module_Exports({
 async(Void, man, text) => {
         let name1 = text.split("|")[0] || ''
         let name2 = text.split("|")[1] || `1`
-        let cap = text.split("|")[1] ? '': `*╰┈➤ ​🇬​​🇪​​🇳​​🇪​​🇷​​🇦​​🇹​​🇪​​🇩​ ​🇧​​🇾 ${sigma_config.botname}*`
+        let cap = text.split("|")[1] ? '': `*╰┈➤ 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 ${sigma_config.botname}*`
          
 for (let i = 0; i < name2; i++)
 {
@@ -91,7 +108,7 @@ Module_Exports({
 async(Void, man, text) => 
 {
     let  waifuddfg = await axios.get(`https://nekos.life/api/v2/img/fox_girl`);
-    await Void.sendMessage(man.chat, {image: { url: waifuddfg.data.url },caption:`*╰┈➤ ​🇬​​🇪​​🇳​​🇪​​🇷​​🇦​​🇹​​🇪​​🇩​ ​🇧​​🇾 ${sigma_config.botname}*` }, { quoted: man })
+    await Void.sendMessage(man.chat, {image: { url: waifuddfg.data.url },caption:`*╰┈➤ 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 ${sigma_config.botname}*` }, { quoted: man })
 })
 //-----------------------------------------------------------------------
 Module_Exports({
@@ -122,7 +139,7 @@ Module_Exports({
             Void.sendMessage(
                 man.chat, {
                     image: { url: r.urlToImage },
-                    caption: `*Title:* ${r.title}\n\n*Content:* ${r.content}\n*Author:* ${r.author}\n*Source:* ${r.source.name}\n*Created On:* ${r.publishedAt}\n*More on:* ${r.url}\n\n*ᴘᴏᴡᴇʀᴇᴅ ʙʏ* ɢɴɪᴍᴇ ᴍᴅ`,
+                    caption: `*Title:* ${r.title}\n\n*Content:* ${r.content}\n*Author:* ${r.author}\n*Source:* ${r.source.name}\n*Created On:* ${r.publishedAt}\n*More on:* ${r.url}\n\n*•ᴘᴏᴡᴇʀᴇᴅ ʙʏ•* sɪɢᴍᴀ ᴹᴰ`,
                 }, {
                     quoted: man,
                 }
@@ -148,7 +165,7 @@ async(Void, man, text) => {
         type: 1,
     }, ];
 
-    await Void.sendMessage(man.chat, {image: { url: waifud.data.url },caption:`*╰┈➤ ​🇬​​🇪​​🇳​​🇪​​🇷​​🇦​​🇹​​🇪​​🇩​ ​🇧​​🇾 ${sigma_config.botname}*`}, {quoted: man})
+    await Void.sendMessage(man.chat, {image: { url: waifud.data.url },caption:`*╰┈➤ 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 ${sigma_config.botname}*`}, {quoted: man})
 }
 )
 //-----------------------------------------------------------------------
@@ -257,7 +274,7 @@ const data = await response.json();
 
                 let buttonMessaged = {
                     image: { url: url },
-                    caption: `*╰┈➤ ​🇬​​🇪​​🇳​​🇪​​🇷​​🇦​​🇹​​🇪​​🇩​ ​🇧​​🇾 ${sigma_config.botname}*`,
+                    caption: `*╰┈➤ 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 ${sigma_config.botname}*`,
                     footer: tlang().footer,
                     headerType: 4,
                    
@@ -279,7 +296,7 @@ async(Void, man,text) =>
 {
     let anu = await fetchJson('https://raw.githubusercontent.com/Maher-Zubair/SIGMA-MD/main/Media/WallPapers/husbu.json')
     let random = anu[Math.floor(Math.random() * anu.length)]
-    return await Void.sendMessage(man.chat,{image :{url : random } , caption: `*╰┈➤ ​🇬​​🇪​​🇳​​🇪​​🇷​​🇦​​🇹​​🇪​​🇩​ ​🇧​​🇾 ${sigma_config.botname}*`  }, { quoted: man })
+    return await Void.sendMessage(man.chat,{image :{url : random } , caption: `*╰┈➤ 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 ${sigma_config.botname}*`  }, { quoted: man })
 })
 
 //------------------------------------------------------------------------
@@ -296,7 +313,7 @@ async(Void, man,text) =>
 {
     let anu = await fetchJson('https://raw.githubusercontent.com/Maher-Zubair/SIGMA-MD/main/Media/Videos/Tik_Videos.json')
     let random = anu[Math.floor(Math.random() * anu.length)]
-    return await Void.sendMessage(man.chat,{video :{url : random.SIGMA_MD } , caption: `*╰┈➤ ​🇬​​🇪​​🇳​​🇪​​🇷​​🇦​​🇹​​🇪​​🇩​ ​🇧​​🇾 ${sigma_config.botname}*`,width: 600,height: 490  }, { quoted: man })
+    return await Void.sendMessage(man.chat,{video :{url : random.SIGMA_MD } , caption: `*╰┈➤ 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 ${sigma_config.botname}*`,width: 600,height: 490  }, { quoted: man })
 })
 //-----------------------------------------------------------------------------
 Module_Exports({
@@ -309,6 +326,6 @@ async(Void, man,text) =>
 {
     let anu = await fetchJson('https://raw.githubusercontent.com/Maher-Zubair/SIGMA-MD/main/Media/WallPapers/shota.json')
     let random = anu[Math.floor(Math.random() * anu.length)]
-    return await Void.sendMessage(man.chat,{image :{url : random } , caption: `*╰┈➤ ​🇬​​🇪​​🇳​​🇪​​🇷​​🇦​​🇹​​🇪​​🇩​ ​🇧​​🇾 ${sigma_config.botname}*`  }, { quoted: man })
+    return await Void.sendMessage(man.chat,{image :{url : random } , caption: `*╰┈➤ 𝙶𝙴𝙽𝙴𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 ${sigma_config.botname}*`  }, { quoted: man })
 })
 //-------------------------------------------------------------------------
