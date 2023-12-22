@@ -1,5 +1,5 @@
 //══════════════════════════════════════════════════════════════════════════════════════════════════════// 
-const {Module_Exports , name , prefix,getBuffer,tlang,fetchJson } = require('../lib')
+/*const {Module_Exports , name , prefix,getBuffer,tlang,fetchJson } = require('../lib')
 const fetch = require('node-fetch');
 const bocil = require('@bochilteam/scraper');
 const cheerio = require('cheerio')
@@ -72,4 +72,4 @@ Module_Exports({
             //console.log("url : " , video  ,"\nThumbnail : " , thumbnail ,"\n Audio url : " , audio )
             if (status) return await sigma.sendMessage(person.chat, {video : {url : video } ,caption: `*╰┈➤ ​🇬​​🇪​​🇳​​🇪​​🇷​​🇦​​🇹​​🇪​​🇩​ ​🇧​​🇾 ${name.botname}*`,height: 470,width: 540,  } , {quoted : person });
             else return await person.reply("Error while downloading your video") 
-        })           
+        })      */     
