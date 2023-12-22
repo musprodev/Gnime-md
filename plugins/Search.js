@@ -131,17 +131,17 @@ Module_Exports({
         try {
           let wdata = await axios.get("https://api.openweathermap.org/data/2.5/weather?q=" + text + "&units=metric&appid=060a6bcfa19809c2cd4d97a212b19273&language=en");
           let mz = '';
-          mz += "┏━━「 " + mztit + " 」━▣\n┃┏➛ *ɢɴɪᴍᴇ ᴍᴅ*\n┃┗➛ *ᴡᴇᴀᴛʜᴇʀ sᴇᴀʀᴄʜ*\n┃⁞❏.       " + fancytext("*weather of*", 1) + " " + text + "\n";
-          mz += "┃⁞❏. " + fancytext("*country*", 1) + " " + wdata.data.sys.country + "\n";
-          mz += "┃⁞❏. " + fancytext("*condition*", 1) + " " + wdata.data.weather[0].main + "\n";
-          mz += "┃⁞❏. " + fancytext("*description*", 1) + " " + wdata.data.weather[0].description + "\n";
-          mz += "┃⁞❏. " + fancytext("*temperature*", 1) + " " + wdata.data.main.temp + "\n";
-          mz += "┃⁞❏. " + fancytext("*feels-like*", 1) + " " + wdata.data.main.feels_like + "\n";
-          mz += "┃⁞❏. " + fancytext("*pressure*", 1) + " " + wdata.data.main.pressure + "\n";
-          mz += "┃⁞❏. " + fancytext("*humidity*", 1) + " " + wdata.data.main.humidity + "\n";
-          mz += "┃⁞❏. " + fancytext("*wind-speed*", 1) + " " + wdata.data.wind.speed + "\n";
-          mz += "┃⁞❏. " + fancytext("*latitude*", 1) + " " + wdata.data.coord.lat + "\n";
-          mz += "┃⁞❏. " + fancytext("*longitude*", 1) + " " + wdata.data.coord.lon + "\n┗━━━━━━━━━━▣\n*╰┈➤ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ " + name.botname + '*';
+          mz += "┏━━「 " + mztit + " 」━▣\n「★」┏➛ *ɢɴɪᴍᴇ ᴍᴅ*\n「★」┗➛ *ᴡᴇᴀᴛʜᴇʀ sᴇᴀʀᴄʜ*\n「★」⁞❏.       " + fancytext("*weather of*", 1) + " " + text + "\n";
+          mz += "「★」⁞❏. " + fancytext("*country*", 1) + " " + wdata.data.sys.country + "\n";
+          mz += "「★」⁞❏. " + fancytext("*condition*", 1) + " " + wdata.data.weather[0].main + "\n";
+          mz += "「★」⁞❏. " + fancytext("*description*", 1) + " " + wdata.data.weather[0].description + "\n";
+          mz += "「★」⁞❏. " + fancytext("*temperature*", 1) + " " + wdata.data.main.temp + "\n";
+          mz += "「★」⁞❏. " + fancytext("*feels-like*", 1) + " " + wdata.data.main.feels_like + "\n";
+          mz += "「★」⁞❏. " + fancytext("*pressure*", 1) + " " + wdata.data.main.pressure + "\n";
+          mz += "「★」⁞❏. " + fancytext("*humidity*", 1) + " " + wdata.data.main.humidity + "\n";
+          mz += "「★」⁞❏. " + fancytext("*wind-speed*", 1) + " " + wdata.data.wind.speed + "\n";
+          mz += "「★」⁞❏. " + fancytext("*latitude*", 1) + " " + wdata.data.coord.lat + "\n";
+          mz += "「★」⁞❏. " + fancytext("*longitude*", 1) + " " + wdata.data.coord.lon + "\n┗━━━━━━━━━━▣\n*╰┈➤ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ " + name.botname + '*';
           const slog = await getBuffer(global.slogo);
           let king = {
             'image': {

@@ -206,7 +206,7 @@ Module_Exports({
     let {
       data
     } = await axios.get("https://api.github.com/repos/Maher-Zubair/SIGMA-MD");
-    let cap = "┏━━「 " + mztit + " 」━▣\n┃⁞❏. *sᴛᴀʀs* " + data.stargazers_count + " sᴛᴀʀs\n┃⁞❏. *ꜰᴏʀᴋs* " + data.forks_count + " ꜰᴏʀᴋs\n┃⁞❏. *sᴘᴇᴇᴅ* " + latensie.toFixed(4) + " ᴍs \n┃⁞❏. *ᴠᴇʀsɪᴏɴ* sɪɢᴍᴀ\n┃⁞❏. *ᴅᴇᴠᴇʟᴏᴘᴇʀ* ᴀꜱᴛʀᴏᴘᴇᴅᴀ\n┗━━━━━━━━━━▣\n*ʀᴇʟᴇᴀꜱᴇᴅ ᴅᴀᴛᴇ*\n_20/𝟷2/𝟸𝟶𝟸𝟹_\n*ʀᴇᴘᴏ*\n_http://github.com/Astropeda/Gnime-md_\n" + scap;
+    let cap = "┏━━「 " + mztit + " 」━▣\n「★」⁞❏. *sᴛᴀʀs* " + data.stargazers_count + " sᴛᴀʀs\n「★」⁞❏. *ꜰᴏʀᴋs* " + data.forks_count + " ꜰᴏʀᴋs\n「★」⁞❏. *sᴘᴇᴇᴅ* " + latensie.toFixed(4) + " ᴍs \n「★」⁞❏. *ᴠᴇʀsɪᴏɴ* sɪɢᴍᴀ\n「★」⁞❏. *ᴅᴇᴠᴇʟᴏᴘᴇʀ* ᴀꜱᴛʀᴏᴘᴇᴅᴀ\n┗━━━━━━━━━━▣\n*ʀᴇʟᴇᴀꜱᴇᴅ ᴅᴀᴛᴇ*\n_20/𝟷2/𝟸𝟶𝟸𝟹_\n*ʀᴇᴘᴏ*\n_http://github.com/Astropeda/Gnime-md_\n" + scap;
     let Maher_Zubair_repo = {
       'image': {
         'url': await botpic()
@@ -249,11 +249,11 @@ async(sigma, person) => {
   latensie = speed() - timestampe;
   let ter = `
 ┏━━「 ${mztit} 」━▣
-┃⁞❏. *_ᴜᴘ-ᴛɪᴍᴇ_* ${runtime(process.uptime())}
-┃⁞❏. *_sᴘᴇᴇᴅ_* ${latensie.toFixed(4)} ᴍs 
-┃⁞❏. *_ᴘʟᴀᴛғᴏʀᴍ_* ᴍᴀᴄ-ᴏs
-┃⁞❏. *_ᴠᴇʀsɪᴏɴ_* ${name.VERSION} 
-┃⁞❏. *_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_* *_ɢɴɪᴍᴇ ᴍᴅ_*
+「★」⁞❏. *_ᴜᴘ-ᴛɪᴍᴇ_* ${runtime(process.uptime())}
+「★」⁞❏. *_sᴘᴇᴇᴅ_* ${latensie.toFixed(4)} ᴍs 
+「★」⁞❏. *_ᴘʟᴀᴛғᴏʀᴍ_* ᴍᴀᴄ-ᴏs
+「★」⁞❏. *_ᴠᴇʀsɪᴏɴ_* ${name.VERSION} 
+「★」⁞❏. *_ᴘᴏᴡᴇʀᴇᴅ ʙʏ_* *_ɢɴɪᴍᴇ ᴍᴅ_*
 ┗━━━━━━━━━━▣
 `;
   let buttonMessaged = {
@@ -351,8 +351,8 @@ Module_Exports({
 async(bot, man,write,{isCreator}) => {
 
 if(!isCreator) return man.reply(tlang().owner);
-let SIGMA_THEMES=`┏━━「 ${mztit} 」━▣ \n┃⁞❏. *ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʀᴇᴍɪᴜᴍ*\n┃⁞❏. *ᴛʜᴇᴍᴇs ɪɴ ɢɴɪᴍᴇ ᴍᴅ*\n`
-SIGMA_THEMES+=`┃⁞❏. GNIME\n┃⁞❏. SHELBY\n┃⁞❏. JOKER\n┃⁞❏. PATRICK\n┃⁞❏. SIGMA_MD\n┃⁞❏. AVENGERS\n┃⁞❏. BTS\n┃⁞❏. ANIME\n┃⁞❏. GOJO\n┃⁞❏. MOMOLAND\n┃⁞❏. ADAM\n┃⁞❏. AYANOKOJI\n┃⁞❏. EDITH\n┃⁞❏. FRIDAY\n┃⁞❏. GENOS\n┃⁞❏. GIDEON\n┃⁞❏. GOKU\n┃⁞❏. LUFFY\n┃⁞❏. NARUTO\n┃⁞❏. NEZUKO\n┃⁞❏. PARKER\n┃⁞❏. ${prefix}setvar THEME:BTS\n┗━━━━━━━━━━▣`
+let SIGMA_THEMES=`┏━━「 ${mztit} 」━▣ \n「★」⁞❏. *ᴀᴠᴀɪʟᴀʙʟᴇ ᴘʀᴇᴍɪᴜᴍ*\n「★」⁞❏. *ᴛʜᴇᴍᴇs ɪɴ ɢɴɪᴍᴇ ᴍᴅ*\n`
+SIGMA_THEMES+=`「★」⁞❏. GNIME\n「★」⁞❏. SHELBY\n「★」⁞❏. JOKER\n「★」⁞❏. PATRICK\n「★」⁞❏. SIGMA_MD\n「★」⁞❏. AVENGERS\n「★」⁞❏. BTS\n「★」⁞❏. ANIME\n「★」⁞❏. GOJO\n「★」⁞❏. MOMOLAND\n「★」⁞❏. ADAM\n「★」⁞❏. AYANOKOJI\n「★」⁞❏. EDITH\n「★」⁞❏. FRIDAY\n「★」⁞❏. GENOS\n「★」⁞❏. GIDEON\n「★」⁞❏. GOKU\n「★」⁞❏. LUFFY\n「★」⁞❏. NARUTO\n「★」⁞❏. NEZUKO\n「★」⁞❏. PARKER\n「★」⁞❏. ${prefix}setvar THEME:BTS\n┗━━━━━━━━━━▣`
 return man.reply(SIGMA_THEMES)
   
 }
