@@ -22,7 +22,7 @@ const moment = require("moment-timezone");
 const Levels = require("discord-xp");
 const fs = require('fs-extra')
 const Jimp = require("jimp");
-const sɪɢᴍᴀ_ᴍᴅ = require('../lib/sigma_plugins')
+const sɪɢᴍᴀ_ᴍᴅ = require('../lib/plugins')
 
 
 

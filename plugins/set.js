@@ -24,7 +24,7 @@ const fs = require("fs")
 let { fancytext, tlang, tiny, runtime, formatp, botpic, getBuffer ,prefix, sck1,name } = require("../lib");
 const long = String.fromCharCode(8206)
 const readmore = long.repeat(4001)
-const sɪɢᴍᴀ_ᴍᴅ = require('../lib/sigma_plugins')
+const sɪɢᴍᴀ_ᴍᴅ = require('../lib/plugins')
 
 
 
