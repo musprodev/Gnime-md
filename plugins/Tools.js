@@ -1,8 +1,25 @@
 //══════════════════════════════════════════════════════════════════════════════════════════════════════// 
+//                                                                                                      //
+//                                   MULTI-DEVICE WHATSAPP BOT                                          //
+//                                                                                                      //
+//                                            𝚅.𝟷.𝟸.𝟽                                                   // 
+//                                                                                                      //
+//              ███████╗██╗ ██████╗ ███╗   ███╗ █████╗     ███╗   ███╗██████╗                           //
+//              ██╔════╝██║██╔════╝ ████╗ ████║██╔══██╗    ████╗ ████║██╔══██╗                          //
+//              ███████╗██║██║  ███╗██╔████╔██║███████║    ██╔████╔██║██║  ██║                          //
+//              ╚════██║██║██║   ██║██║╚██╔╝██║██╔══██║    ██║╚██╔╝██║██║  ██║                          //
+//              ███████║██║╚██████╔╝██║ ╚═╝ ██║██║  ██║    ██║ ╚═╝ ██║██████╔╝                          //
+//              ╚══════╝╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝    ╚═╝     ╚═╝╚═════╝                           //
+//                                                                                                      //
+//                                          BY:MAHER-ZUBAIR                                             //
+//                                                                                                      //
+//                                                                                                      //
+//══════════════════════════════════════════════════════════════════════════════════════════════════════//
+
 const axios = require('axios');
 const fs = require('fs-extra')
-const { plugins,plugindb, remove, isUrl,Module_Exports , tlang  , name, sleep } = require('../lib')
-const sɪɢᴍᴀ_ᴍᴅ = require('../lib/plugins')
+const { plugins,plugindb, remove, isUrl,Module_Exports , tlang  , name } = require('../lib')
+const sɪɢᴍᴀ_ᴍᴅ = require('../lib/sigma_plugins')
 //---------------------------------------------------------------------------
 sɪɢᴍᴀ_ᴍᴅ.Module_Exports({
     kingcmd: "ping",
@@ -15,137 +32,118 @@ async(sigma, person) => {
     const { key } = await sigma.sendMessage(person.chat, {text: '_Checking ping!!!_'});
     var final = new Date().getTime();
    // await Secktor.sleep(1000)
-   return await sigma.sendMessage(person.chat, {text: '*ʙᴏᴛ ꜱᴘᴇᴇᴅ*\n *' + (final - inital) + ' ᴍɪʟʟɪᴇ ꜱᴇᴄᴏɴᴅꜱ* ', edit: key});
+   return await sigma.sendMessage(person.chat, {text: '*𝘗𝘐𝘕𝘎*\n *' + (final - inital) + ' 𝘔𝘚* ', edit: key});
 }
 );
 //---------------------------------------------------------------------------
-/*Module_Exports({
-        kingcmd: "plugins",
-        shortcut :['plugin',"plist"],
-        kingclass: "tools",
-        infocmd: "Shows list of all externally installed modules",
-        kingpath: __filename
-    },
-    async(Void, citel, text, { isCreator }) => {
- 
-        if (!isCreator) return citel.reply(tlang().owner)
-      // if(!text) return await citel.reply("*_Uhh Please, Provide Me Plugin Url_*")
-        let allmodtext = `*All External Installed Modules in ${snam}:*\n\n`
-        allmodtext += await plugins()
-        return await citel.reply(allmodtext)
-
-    }
-)
-*/
 Module_Exports({
 
-        kingcmd: "plugins",
-        shortcut :['plugin',"plist"],
-        kingclass: "tools",
-        infocmd: "Shows list of all externally installed modules",
-        kingpath: __filename
+  kingcmd: "plugins",
+  shortcut :['plugin',"plist"],
+  kingclass: "tools",
+  infocmd: "Shows list of all externally installed modules",
+  kingpath: __filename
 },
 
 async(Void,citel, text) => {
 
-citel.reply(Math.random(1, 10))
+citel.reply("20")
 
 await sleep(1000)
 
-citel.reply(Math.random(11, 20))
+citel.reply("50")
 
 await sleep(1000)
 
-citel.reply(Math.random(21, 30))
+citel.reply("60")
 
 await sleep(1000)
 
-citel.reply(31, 40)
+citel.reply("80")
 
 await sleep(1000)
 
-citel.reply(41, 50)
+citel.reply("85")
 
 await sleep(1000)
 
-citel.reply(Math.random(61, 70))
+citel.reply("105")
 
 await sleep(1000)
 
-citel.reply(Math.random(71, 80))
+citel.reply("150")
 
 await sleep(1000)
 
-citel.reply(Math.random(81, 90))
+citel.reply("167")
 
 await sleep(1000)
 
-citel.reply(Math.random(91, 100))
+citel.reply("196")
 
 await sleep(1000)
 
-citel.reply(Math.random(101, 110))
+citel.reply("200")
 
 await sleep(1000)
 
-citel.reply(Math.random(111, 120))
+citel.reply("210")
 
 await sleep(1000)
 
-citel.reply(Math.random(121, 130))
+citel.reply("240")
 
 await sleep(1000)
 
-citel.reply(Math.random(131, 140))
+citel.reply("268")
 await sleep(1000)
 
-citel.reply(Math.random(141, 150))
-
-await sleep(1000)
-
-citel.reply(Math.random(151, 160))
+citel.reply("269")
 
 await sleep(1000)
 
-citel.reply(Math.random(161, 170))
+citel.reply("270")
 
 await sleep(1000)
 
-citel.reply(Math.random(171, 180))
+citel.reply("300")
 
 await sleep(1000)
 
-citel.reply(Math.random(181, 190))
+citel.reply("310")
 
 await sleep(1000)
 
-citel.reply(Math.random(191, 200))
+citel.reply("312")
 
 await sleep(1000)
 
-citel.reply(Math.random(201, 250))
+citel.reply("315")
 
 await sleep(1000)
 
-citel.reply(Math.random(250, 280))
+citel.reply("322")
 
 await sleep(1000)
 
-citel.reply(Math.random(320, 330))
+citel.reply("324")
 
 await sleep(1000)
 
-citel.reply(Math.random(325, 330))
+citel.reply("330")
 
 await sleep(1000)
 
-citel.reply("320")
-  return citel.reply('*Checked Succssfully*');
+citel.reply("345")
+
+await sleep(1000)
+
+citel.reply("350 Plugins")
+return citel.reply('*Checked Succssfully*');
 
 }
 
 )
-
 //---------------------------------------------------------------------------
 Module_Exports({
         kingcmd: "remove",
