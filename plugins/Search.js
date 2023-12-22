@@ -399,7 +399,7 @@ Module_Exports({
                   try { var anu1 = await Void.fetchStatus(anu[0].jid); } 
                   catch { var anu1 = '401' ; }
                   if (anu1 == '401' || anu1.status.length == 0) { nobio += `wa.me/${anu[0].jid.split("@")[0]}\n` ; } 
-                  else {  text += `*ɴᴜᴍʙᴇʀ* wa.me/${anu[0].jid.split("@")[0]}\n*ʙɪᴏ* ${anu1.status}\n*ʟᴀꜱᴛ ᴜᴘᴅᴀᴛᴇ* ${moment(anu1.setAt).tz('Africa/Lagos').format('HH:mm:ss DD/MM/YYYY')}\n\n` ;   }
+                  else {  text += `*ɴᴜᴍʙᴇʀ* wa.me/${anu[0].jid.split("@")[0]}\n*ʙɪᴏ* ${anu1.status}\n*ʟᴀꜱᴛ ᴜᴘᴅᴀᴛᴇ* ${moment(anu1.setAt).tz('Asia/Karachi').format('HH:mm:ss DD/MM/YYYY')}\n\n` ;   }
             } catch { nowhatsapp += `${number0}${i}${number1}\n`; }
         }
         return await citel.reply(`${text}${nobio}${nowhatsapp}*╰┈➤ ​🇬​​🇪​​🇳​​🇪​​🇷​​🇦​​🇹​​🇪​​🇩​ ​🇧​​🇾 ${name.botname}*`)
