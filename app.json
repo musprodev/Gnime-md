@@ -1,18 +1,18 @@
 {
-  "name": "Gnime-Md WHATSAPP BOT BY Astropeda",
+  "name": "🇭​​🇦​​🇸​​🇭​​🇮​​🇷​​🇦-Md WHATSAPP BOT BY Astropeda",
   "description": "A Whatsapp Bot With Most Premium Features Makes Your Whatsapp Premium.",
-  "logo": "https://leadier-umbrellas.000webhostapp.com/Gnime-logos.jpeg",
-  "keywords": ["nodejs", "bot", "whatsapp bot", "GNIME_MD", "GNIME_BOT", "GNIME","GNIME_MD-BOT","Multi-Themes Bot","multi device"],
+  "logo": "https://cdn.hashnode.com/res/hashnode/image/upload/v1694550321279/tJeVF1BPF.jpeg?w=400&h=400&fit=crop&crop=faces&auto=compress,format&format=webp",
+  "keywords": ["nodejs", "bot", "whatsapp bot","Multi-Themes Bot","multi device"],
   "success_url": "/",
   "stack": "container",
 "env": {
   "OWNER_NAME": {
   "description": "Name of Bot Owner",
-      "value": "Astropeda"
+      "value": "🇭​​🇦​​🇸​​🇭​​🇮​​🇷​​🇦"
   },
    "THUMB_IMAGE": {
     "description": "THUMBNAIL Image for bot.",
-     "value": "https://leadier-umbrellas.000webhostapp.com/Gnime-logos.jpeg"
+     "value": "https://cdn.hashnode.com/res/hashnode/image/upload/v1694550321279/tJeVF1BPF.jpeg?w=400&h=400&fit=crop&crop=faces&auto=compress,format&format=webp"
     },
  "HEROKU_API_KEY": {
     "description": "Put Your Heroku Api Key Here",
@@ -64,12 +64,12 @@
   },
   "OWNER_NUMBER": {
     "description": "Dont put '+' only country code then number \",\")",
-       "value": "2349027862116",
+       "value": "2348117939262",
        "required" :true
   },
    "SESSION_ID": {
     "description": "Please put your SESSION_ID here,if you don't have visit to get Session id\nhttps://replit.com/@astromedia0010/GNIME-MD-QR?v=1",
-    "value" : "GNIME-MD;;;"
+    "value" : ""
   },
     "OPENAI_API_KEY": {
     "description": "Please put your OPENAI api key here.Get it from beta.openai.com ",
@@ -87,7 +87,7 @@
   },
     "WORKTYPE": {
   "description": "Worktype of your bot. Use public or private, if it is private then only bot number can use it. If public then everyone can use it.",
-         "value": "public"
+         "value": "private"
   },
       "AUTO_REACTION": {
     "description": " Set it `true` If You Wants To Reacts emoji to all commands. \n And Set it `all` is You Wants to React Emojies to All Messages",
@@ -96,12 +96,12 @@
   },
   "PACK_NAME": {
     "description": "Put Sticker Pack_Name.",
-     "value": "ɢɴɪᴍᴇ ᴍᴅ",
+     "value": "🇭​​🇦​​🇸​​🇭​​🇮​​🇷​​🇦 ᴍᴅ",
      "required": false 
   },
 "PACK_AUTHER": {
     "description": "Put Sticker Author_Name.",
-     "value": "ᴀꜱᴛʀᴏᴘᴇᴅᴀ",
+     "value": "🇭​​🇦​​🇸​​🇭​​🇮​​🇷​​🇦",
      "required": false 
   },
 "TIME_ZONE": {
@@ -111,12 +111,12 @@
 },
 "MZTIT": {
   "description": "Add Your Title",
-   "value": "ɢɴɪᴍᴇ ᴍᴅ"
+   "value": "🇭​​🇦​​🇸​​🇭​​🇮​​🇷​​🇦 ᴍᴅ"
     
 },
 "GNAME": {
   "description": "Add Your Group Name Here.You Can See in Most Commands",
-   "value": "ɢɴɪᴍᴇ ᴍᴅ-sᴜᴘᴘᴏʀᴛ",
+   "value": "🇭​​🇦​​🇸​​🇭​​🇮​​🇷​​🇦 ᴍᴅ-sᴜᴘᴘᴏʀᴛ",
     "required": false
 },
 "WAURL": {
@@ -126,7 +126,7 @@
 },
 "BOT_NAME": {
   "description": "Add Your Own Bot Name",
-   "value": "ɢɴɪᴍᴇ ᴍᴅ"
+   "value": "🇭​​🇦​​🇸​​🇭​​🇮​​🇷​​🇦 ᴍᴅ"
     
 },
 "REMOVE_BG_KEY": {
