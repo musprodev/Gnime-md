@@ -1,7 +1,7 @@
 {
-          "name": "Gnime-Md",
+          "name": "🇭​​🇦​​🇸​​🇭​​🇮​​🇷​​🇦 ᴍᴅ",
           "version": "1.2.7",
-          "description": "Gnime",
+          "description": "🇭​​🇦​​🇸​​🇭​​🇮​​🇷​​🇦",
           "main": "lib/client.js",
           "type": "commonjs",
           "license": "GPL-3.0",
@@ -9,7 +9,7 @@
                     "start": "pm2 start lib/client.js --deep-monitoring --attach --name Gnime-Md",
                     "stop": "pm2 stop Gnime-Md"
           },
-          "author": "Astropeda",
+          "author": "🇭​​🇦​​🇸​​🇭​​🇮​​🇷​​🇦",
           "dependencies": {
                     "@adiwajshing/keyed-db": "^0.2.4",
                     "@bochilteam/scraper": "latest",
